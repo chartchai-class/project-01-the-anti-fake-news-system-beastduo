@@ -82,8 +82,8 @@ src/
 ## Team
 - Group Name: BeastDuo
 - Members:
-  - 662115012 - Chindanai Jaiman
-  - 662115013 - Titpon Tawong
+  - 662115012 - Chindanai Jaiman (701)
+  - 662115013 - Titpon Tawong (701)
 
 ## Links
 - Deployed site: <Vercel URL>
