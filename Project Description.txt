@@ -1,0 +1,144 @@
+                                         The Term Project I
+                   SE331 Component-Based Software Development
+Instruction
+
+        You have already been set as a group of 3 people. If you cannot find a group of 3 people, please
+let me know so I can set up a group for you. The mock data must be provided, and the web application
+should be deployed to the server.
+
+Brief Requirement
+
+The Social Anti-Fake News System.
+
+The Social Anti-Fake News system is a system that requires the wisdom of the cloud to help check fake
+news. The users who heard the news can enter the news into the system, so the other users can see all
+the news. The other users can look at the news and vote whether this news is fake or not, and put their
+comments on why they think this is fake or not. The news is considered fake or not fake by the number of
+votes. So on the list of news page, users can filter all news, fake news, or non-fake news.
+
+So you have to develop this Social Ani-Fake News System. The system consists of the home page, which
+will show the list of news and a filter to select what kind of news to see. The user must be able to select
+the amount of news they want to see on each page. The details of each news story on this home page
+must include the news topic, a short detail of the news, the status of the news, whether fake or not, the
+name of the reporter, and the date and time of the report.
+
+When the user selects the news that they want to see the details, the application should show the new
+with the full details such as the news topic, a full detail of the news, the status of the news, whether fake
+or not fake, the name of the reporter, the date of time of the report, and the image of the event (which
+is in the html link form). From this page, the user can open the list of comments and the results that other
+people have voted and commented on. In this part, the pagination must be applied. Or the user can click
+on another page to vote on the news, the user has to vote whether the news is fake or not, and add a
+comment or an image that you think can convince your choice (the link should be the URL link.) The data
+should be stored in Storage management, as you cannot call the Post request to the server, but the data
+you have entered must be shown on the comment lists. However, when you reload the page. The
+comments can be removed as a simple single-page application.
+
+You have to provide the mock data to be able to show all the pagination of your design, and the application
+should be deployed in Vercel.
+
+
+
+You should provide a video clip around 2-3 minutes to demo your application.
+
+The submission should be provided in the Github repository, with the README.md, which specifies your
+group name, member details such as your student id, and student names, the url of your video and the
+URL of the deployed website.
+
+
+
+
+                                                                                    Updated: 8th Aug 2025
+You must enter the classroom and create a group.
+
+
+
+You can log in to https://classroom.github.com/a/k6kO_4Go to access the GitHub classroom
+workspace.
+
+If you have any problems due to the platform, please let me know as soon as possible.
+
+The grading criteria
+
+        The grading criteria are provided in the Appendix A
+
+Your score will be divided by the proportion of your distribution in the GitHub repository. So, plan
+wisely. And do not forget to invite me to your GitHub repository.
+
+Please update your readme.md to give me your information.
+
+Project Submission
+
+You have to submit your repository link (which you have already added me to be the visitor of your
+GitHub)—the URL of the website you deploy. The submission must be before 26th August 11.59 pm. (as
+your exam date will be on 28th August 12.00pm. I will read your information from your readme.md.
+
+When the project score is announced, you can contact me to defend your score. The details will be given
+when the score is announced.
+
+No Presentation is required.
+
+
+
+
+                                                                                   Updated: 8th Aug 2025
+No Score                                0                   1                     2                     3                    4
+1  The mock data is provided            None/ Not           The environment       The db.json has       The mock data        The mock data
+                                        complete            call has been made    been provided         with some data       with the enough
+                                                                                                        has been provided    proper data has
+                                                                                                                             been provided
+                                                                                                                             (enough to test
+                                                                                                                             with the
+                                                                                                                             pagination)
+2   The layout of web site              None/ Not           The layout is         Some pages still      The layout is not    The layout is not as
+                                        complete            similar to the        have the same         the same as the      the same as the
+                                                            Event application     layout as Event       Event application    Event application,
+                                                            we have done in       application                                and show the
+                                                            the lab                                                          proper
+                                                                                                                             responsiveness
+3   The system can show the list of     None/ Not           The news are listed   The news details      The pagination has   The number of
+    news properly                       complete                                  are shown             been set             countries to be
+                                                                                  properly                                   shown in the page
+                                                                                                                             has been set
+4   The system can show the list of     The checker preference
+    news properly – The UX/UI
+    Design
+5   The system can filter the list of   None/Not                                  The filter has been   The filter works     The Loading
+    Fake news and non-Fake news         complete                                  provided in the UI    properly             environment has
+                                                                                                                             provided properly
+6   The system can filter the list of   The checker preference
+    Fake news and non-Fake news
+    – The UX/UI Design
+7   The system can show the             None/Not            The template of       The data is shown     The information of   The sub routing is
+    details news                        complete            the news is           only the news         each news            provided for the
+                                                            provided              details               provided properly    further features
+8   The system can show the             The checker preference
+    details news – the UX/UI
+
+
+
+
+                                                                                                                       Updated: 8th Aug 2025
+9    The system can show the list of   None/Not            The UI has been    The vote data, and   The sub routing is   The Pinia is used to
+     comments and votes                Complete            provided           comments from        provided             share the data in
+                                                                              your mock data                            the sub route
+                                                                              can be shown
+10   The system can show the           The checker preference
+     details news – the UX/UI
+11   The system can show the news      None/Not            The UI has been    The voting can be    The news voting      The Vote and
+     voting                            Complete            provided           added to Pinia       count is changed     Comment List for
+                                                                                                   property             the news shows
+                                                                                                                        both data from the
+                                                                                                                        mock data and the
+                                                                                                                        new data
+12   The system can show the           The checker preference
+     details news – the UX/UI
+13   The UI technique                  None/Not            CSS has designed   Tailwinds have       Tailwinds have       Tailwinds have
+                                       complete            properly           been used            been used for the    been used for the
+                                                                                                   whole project        responsive
+14   The deployment                    None/ Not                              The local host       The build can be     The deployment
+                                       complete                               deployment is set    done                 has been set
+
+
+
+
+                                                                                                                  Updated: 8th Aug 2025
