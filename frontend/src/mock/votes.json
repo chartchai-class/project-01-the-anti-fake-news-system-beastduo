@@ -1,0 +1,203 @@
+[
+  { "id": "v001", "newsId": "n001", "isFake": true,  "createdAt": "2025-02-03T10:10:00Z" },
+  { "id": "v002", "newsId": "n001", "isFake": false, "createdAt": "2025-02-03T10:20:00Z" },
+  { "id": "v003", "newsId": "n001", "isFake": true,  "createdAt": "2025-02-03T10:30:00Z" },
+
+  { "id": "v004", "newsId": "n002", "isFake": false, "createdAt": "2025-02-04T08:50:00Z" },
+  { "id": "v005", "newsId": "n002", "isFake": false, "createdAt": "2025-02-04T08:58:00Z" },
+  { "id": "v006", "newsId": "n002", "isFake": true,  "createdAt": "2025-02-04T09:05:00Z" },
+
+  { "id": "v007", "newsId": "n003", "isFake": true,  "createdAt": "2025-02-04T13:05:00Z" },
+  { "id": "v008", "newsId": "n003", "isFake": true,  "createdAt": "2025-02-04T13:15:00Z" },
+  { "id": "v009", "newsId": "n003", "isFake": false, "createdAt": "2025-02-04T13:25:00Z" },
+
+  { "id": "v010", "newsId": "n004", "isFake": true,  "createdAt": "2025-02-05T07:05:00Z" },
+  { "id": "v011", "newsId": "n004", "isFake": false, "createdAt": "2025-02-05T07:12:00Z" },
+  { "id": "v012", "newsId": "n004", "isFake": true,  "createdAt": "2025-02-05T07:18:00Z" },
+
+  { "id": "v013", "newsId": "n005", "isFake": false, "createdAt": "2025-02-05T11:28:00Z" },
+  { "id": "v014", "newsId": "n005", "isFake": false, "createdAt": "2025-02-05T11:40:00Z" },
+  { "id": "v015", "newsId": "n005", "isFake": true,  "createdAt": "2025-02-05T11:55:00Z" },
+
+  { "id": "v016", "newsId": "n006", "isFake": true,  "createdAt": "2025-02-06T09:35:00Z" },
+  { "id": "v017", "newsId": "n006", "isFake": true,  "createdAt": "2025-02-06T09:45:00Z" },
+  { "id": "v018", "newsId": "n006", "isFake": false, "createdAt": "2025-02-06T09:58:00Z" },
+
+  { "id": "v019", "newsId": "n007", "isFake": true,  "createdAt": "2025-02-06T18:18:00Z" },
+  { "id": "v020", "newsId": "n007", "isFake": false, "createdAt": "2025-02-06T18:30:00Z" },
+  { "id": "v021", "newsId": "n007", "isFake": true,  "createdAt": "2025-02-06T18:42:00Z" },
+
+  { "id": "v022", "newsId": "n008", "isFake": false, "createdAt": "2025-02-07T06:25:00Z" },
+  { "id": "v023", "newsId": "n008", "isFake": false, "createdAt": "2025-02-07T06:35:00Z" },
+  { "id": "v024", "newsId": "n008", "isFake": true,  "createdAt": "2025-02-07T06:45:00Z" },
+
+  { "id": "v025", "newsId": "n009", "isFake": true,  "createdAt": "2025-02-07T09:10:00Z" },
+  { "id": "v026", "newsId": "n009", "isFake": true,  "createdAt": "2025-02-07T09:20:00Z" },
+  { "id": "v027", "newsId": "n009", "isFake": false, "createdAt": "2025-02-07T09:30:00Z" },
+
+  { "id": "v028", "newsId": "n010", "isFake": true,  "createdAt": "2025-02-07T15:45:00Z" },
+  { "id": "v029", "newsId": "n010", "isFake": false, "createdAt": "2025-02-07T15:55:00Z" },
+  { "id": "v030", "newsId": "n010", "isFake": true,  "createdAt": "2025-02-07T16:05:00Z" },
+
+  { "id": "v031", "newsId": "n011", "isFake": false, "createdAt": "2025-02-08T08:12:00Z" },
+  { "id": "v032", "newsId": "n011", "isFake": false, "createdAt": "2025-02-08T08:22:00Z" },
+  { "id": "v033", "newsId": "n011", "isFake": true,  "createdAt": "2025-02-08T08:32:00Z" },
+
+  { "id": "v034", "newsId": "n012", "isFake": true,  "createdAt": "2025-02-08T16:22:00Z" },
+  { "id": "v035", "newsId": "n012", "isFake": false, "createdAt": "2025-02-08T16:32:00Z" },
+  { "id": "v036", "newsId": "n012", "isFake": true,  "createdAt": "2025-02-08T16:42:00Z" },
+
+  { "id": "v037", "newsId": "n013", "isFake": false, "createdAt": "2025-02-09T12:28:00Z" },
+  { "id": "v038", "newsId": "n013", "isFake": false, "createdAt": "2025-02-09T12:38:00Z" },
+  { "id": "v039", "newsId": "n013", "isFake": true,  "createdAt": "2025-02-09T12:48:00Z" },
+
+  { "id": "v040", "newsId": "n014", "isFake": true,  "createdAt": "2025-02-10T11:00:00Z" },
+  { "id": "v041", "newsId": "n014", "isFake": false, "createdAt": "2025-02-10T11:08:00Z" },
+  { "id": "v042", "newsId": "n014", "isFake": true,  "createdAt": "2025-02-10T11:16:00Z" },
+
+  { "id": "v043", "newsId": "n015", "isFake": false, "createdAt": "2025-02-10T17:50:00Z" },
+  { "id": "v044", "newsId": "n015", "isFake": false, "createdAt": "2025-02-10T17:58:00Z" },
+  { "id": "v045", "newsId": "n015", "isFake": true,  "createdAt": "2025-02-10T18:08:00Z" },
+
+  { "id": "v046", "newsId": "n016", "isFake": true,  "createdAt": "2025-02-11T09:18:00Z" },
+  { "id": "v047", "newsId": "n016", "isFake": false, "createdAt": "2025-02-11T09:28:00Z" },
+  { "id": "v048", "newsId": "n016", "isFake": true,  "createdAt": "2025-02-11T09:38:00Z" },
+
+  { "id": "v049", "newsId": "n017", "isFake": false, "createdAt": "2025-02-11T21:08:00Z" },
+  { "id": "v050", "newsId": "n017", "isFake": false, "createdAt": "2025-02-11T21:15:00Z" },
+  { "id": "v051", "newsId": "n017", "isFake": true,  "createdAt": "2025-02-11T21:25:00Z" },
+
+  { "id": "v052", "newsId": "n018", "isFake": true,  "createdAt": "2025-02-12T08:45:00Z" },
+  { "id": "v053", "newsId": "n018", "isFake": false, "createdAt": "2025-02-12T08:55:00Z" },
+  { "id": "v054", "newsId": "n018", "isFake": true,  "createdAt": "2025-02-12T09:02:00Z" },
+
+  { "id": "v055", "newsId": "n019", "isFake": false, "createdAt": "2025-02-12T13:35:00Z" },
+  { "id": "v056", "newsId": "n019", "isFake": false, "createdAt": "2025-02-12T13:45:00Z" },
+  { "id": "v057", "newsId": "n019", "isFake": true,  "createdAt": "2025-02-12T13:58:00Z" },
+
+  { "id": "v058", "newsId": "n020", "isFake": true,  "createdAt": "2025-02-13T11:38:00Z" },
+  { "id": "v059", "newsId": "n020", "isFake": false, "createdAt": "2025-02-13T11:48:00Z" },
+  { "id": "v060", "newsId": "n020", "isFake": true,  "createdAt": "2025-02-13T11:58:00Z" },
+
+  { "id": "v061", "newsId": "n021", "isFake": false, "createdAt": "2025-02-13T16:12:00Z" },
+  { "id": "v062", "newsId": "n021", "isFake": false, "createdAt": "2025-02-13T16:20:00Z" },
+  { "id": "v063", "newsId": "n021", "isFake": true,  "createdAt": "2025-02-13T16:30:00Z" },
+
+  { "id": "v064", "newsId": "n022", "isFake": true,  "createdAt": "2025-02-14T09:18:00Z" },
+  { "id": "v065", "newsId": "n022", "isFake": false, "createdAt": "2025-02-14T09:28:00Z" },
+  { "id": "v066", "newsId": "n022", "isFake": true,  "createdAt": "2025-02-14T09:38:00Z" },
+
+  { "id": "v067", "newsId": "n023", "isFake": false, "createdAt": "2025-02-14T20:28:00Z" },
+  { "id": "v068", "newsId": "n023", "isFake": false, "createdAt": "2025-02-14T20:38:00Z" },
+  { "id": "v069", "newsId": "n023", "isFake": true,  "createdAt": "2025-02-14T20:48:00Z" },
+
+  { "id": "v070", "newsId": "n024", "isFake": true,  "createdAt": "2025-02-15T07:55:00Z" },
+  { "id": "v071", "newsId": "n024", "isFake": false, "createdAt": "2025-02-15T08:00:00Z" },
+  { "id": "v072", "newsId": "n024", "isFake": true,  "createdAt": "2025-02-15T08:10:00Z" },
+
+  { "id": "v073", "newsId": "n025", "isFake": false, "createdAt": "2025-02-15T12:12:00Z" },
+  { "id": "v074", "newsId": "n025", "isFake": false, "createdAt": "2025-02-15T12:20:00Z" },
+  { "id": "v075", "newsId": "n025", "isFake": true,  "createdAt": "2025-02-15T12:32:00Z" },
+
+  { "id": "v076", "newsId": "n026", "isFake": true,  "createdAt": "2025-02-16T10:10:00Z" },
+  { "id": "v077", "newsId": "n026", "isFake": false, "createdAt": "2025-02-16T10:18:00Z" },
+  { "id": "v078", "newsId": "n026", "isFake": true,  "createdAt": "2025-02-16T10:28:00Z" },
+
+  { "id": "v079", "newsId": "n027", "isFake": false, "createdAt": "2025-02-16T22:08:00Z" },
+  { "id": "v080", "newsId": "n027", "isFake": false, "createdAt": "2025-02-16T22:15:00Z" },
+  { "id": "v081", "newsId": "n027", "isFake": true,  "createdAt": "2025-02-16T22:25:00Z" },
+
+  { "id": "v082", "newsId": "n028", "isFake": true,  "createdAt": "2025-02-17T06:45:00Z" },
+  { "id": "v083", "newsId": "n028", "isFake": false, "createdAt": "2025-02-17T06:55:00Z" },
+  { "id": "v084", "newsId": "n028", "isFake": true,  "createdAt": "2025-02-17T07:05:00Z" },
+
+  { "id": "v085", "newsId": "n029", "isFake": false, "createdAt": "2025-02-17T12:45:00Z" },
+  { "id": "v086", "newsId": "n029", "isFake": false, "createdAt": "2025-02-17T12:55:00Z" },
+  { "id": "v087", "newsId": "n029", "isFake": true,  "createdAt": "2025-02-17T13:05:00Z" },
+
+  { "id": "v088", "newsId": "n030", "isFake": true,  "createdAt": "2025-02-18T09:35:00Z" },
+  { "id": "v089", "newsId": "n030", "isFake": false, "createdAt": "2025-02-18T09:45:00Z" },
+  { "id": "v090", "newsId": "n030", "isFake": true,  "createdAt": "2025-02-18T09:58:00Z" },
+
+  { "id": "v091", "newsId": "n031", "isFake": false, "createdAt": "2025-02-18T15:52:00Z" },
+  { "id": "v092", "newsId": "n031", "isFake": false, "createdAt": "2025-02-18T16:00:00Z" },
+  { "id": "v093", "newsId": "n031", "isFake": true,  "createdAt": "2025-02-18T16:10:00Z" },
+
+  { "id": "v094", "newsId": "n032", "isFake": true,  "createdAt": "2025-02-19T08:15:00Z" },
+  { "id": "v095", "newsId": "n032", "isFake": false, "createdAt": "2025-02-19T08:22:00Z" },
+  { "id": "v096", "newsId": "n032", "isFake": true,  "createdAt": "2025-02-19T08:32:00Z" },
+
+  { "id": "v097", "newsId": "n033", "isFake": false, "createdAt": "2025-02-19T17:25:00Z" },
+  { "id": "v098", "newsId": "n033", "isFake": false, "createdAt": "2025-02-19T17:35:00Z" },
+  { "id": "v099", "newsId": "n033", "isFake": true,  "createdAt": "2025-02-19T17:45:00Z" },
+
+  { "id": "v100", "newsId": "n034", "isFake": true,  "createdAt": "2025-02-20T10:18:00Z" },
+  { "id": "v101", "newsId": "n034", "isFake": false, "createdAt": "2025-02-20T10:28:00Z" },
+  { "id": "v102", "newsId": "n034", "isFake": true,  "createdAt": "2025-02-20T10:38:00Z" },
+
+  { "id": "v103", "newsId": "n035", "isFake": false, "createdAt": "2025-02-20T13:58:00Z" },
+  { "id": "v104", "newsId": "n035", "isFake": false, "createdAt": "2025-02-20T14:08:00Z" },
+  { "id": "v105", "newsId": "n035", "isFake": true,  "createdAt": "2025-02-20T14:20:00Z" },
+
+  { "id": "v106", "newsId": "n036", "isFake": true,  "createdAt": "2025-02-21T09:35:00Z" },
+  { "id": "v107", "newsId": "n036", "isFake": false, "createdAt": "2025-02-21T09:45:00Z" },
+  { "id": "v108", "newsId": "n036", "isFake": true,  "createdAt": "2025-02-21T09:58:00Z" },
+
+  { "id": "v109", "newsId": "n037", "isFake": false, "createdAt": "2025-02-21T21:05:00Z" },
+  { "id": "v110", "newsId": "n037", "isFake": false, "createdAt": "2025-02-21T21:12:00Z" },
+  { "id": "v111", "newsId": "n037", "isFake": true,  "createdAt": "2025-02-21T21:22:00Z" },
+
+  { "id": "v112", "newsId": "n038", "isFake": true,  "createdAt": "2025-02-22T08:00:00Z" },
+  { "id": "v113", "newsId": "n038", "isFake": false, "createdAt": "2025-02-22T08:08:00Z" },
+  { "id": "v114", "newsId": "n038", "isFake": true,  "createdAt": "2025-02-22T08:18:00Z" },
+
+  { "id": "v115", "newsId": "n039", "isFake": false, "createdAt": "2025-02-22T14:35:00Z" },
+  { "id": "v116", "newsId": "n039", "isFake": false, "createdAt": "2025-02-22T14:45:00Z" },
+  { "id": "v117", "newsId": "n039", "isFake": true,  "createdAt": "2025-02-22T14:55:00Z" },
+
+  { "id": "v118", "newsId": "n040", "isFake": true,  "createdAt": "2025-02-23T10:05:00Z" },
+  { "id": "v119", "newsId": "n040", "isFake": false, "createdAt": "2025-02-23T10:12:00Z" },
+  { "id": "v120", "newsId": "n040", "isFake": true,  "createdAt": "2025-02-23T10:22:00Z" },
+
+  { "id": "v121", "newsId": "n041", "isFake": false, "createdAt": "2025-02-23T18:35:00Z" },
+  { "id": "v122", "newsId": "n041", "isFake": false, "createdAt": "2025-02-23T18:45:00Z" },
+  { "id": "v123", "newsId": "n041", "isFake": true,  "createdAt": "2025-02-23T18:58:00Z" },
+
+  { "id": "v124", "newsId": "n042", "isFake": true,  "createdAt": "2025-02-24T08:18:00Z" },
+  { "id": "v125", "newsId": "n042", "isFake": false, "createdAt": "2025-02-24T08:25:00Z" },
+  { "id": "v126", "newsId": "n042", "isFake": true,  "createdAt": "2025-02-24T08:35:00Z" },
+
+  { "id": "v127", "newsId": "n043", "isFake": false, "createdAt": "2025-02-24T16:20:00Z" },
+  { "id": "v128", "newsId": "n043", "isFake": false, "createdAt": "2025-02-24T16:30:00Z" },
+  { "id": "v129", "newsId": "n043", "isFake": true,  "createdAt": "2025-02-24T16:45:00Z" },
+
+  { "id": "v130", "newsId": "n044", "isFake": true,  "createdAt": "2025-02-25T09:10:00Z" },
+  { "id": "v131", "newsId": "n044", "isFake": false, "createdAt": "2025-02-25T09:18:00Z" },
+  { "id": "v132", "newsId": "n044", "isFake": true,  "createdAt": "2025-02-25T09:28:00Z" },
+
+  { "id": "v133", "newsId": "n045", "isFake": false, "createdAt": "2025-02-25T13:45:00Z" },
+  { "id": "v134", "newsId": "n045", "isFake": false, "createdAt": "2025-02-25T13:55:00Z" },
+  { "id": "v135", "newsId": "n045", "isFake": true,  "createdAt": "2025-02-25T14:05:00Z" },
+
+  { "id": "v136", "newsId": "n046", "isFake": true,  "createdAt": "2025-02-26T10:30:00Z" },
+  { "id": "v137", "newsId": "n046", "isFake": false, "createdAt": "2025-02-26T10:40:00Z" },
+  { "id": "v138", "newsId": "n046", "isFake": true,  "createdAt": "2025-02-26T10:50:00Z" },
+
+  { "id": "v139", "newsId": "n047", "isFake": false, "createdAt": "2025-02-26T19:10:00Z" },
+  { "id": "v140", "newsId": "n047", "isFake": false, "createdAt": "2025-02-26T19:18:00Z" },
+  { "id": "v141", "newsId": "n047", "isFake": true,  "createdAt": "2025-02-26T19:28:00Z" },
+
+  { "id": "v142", "newsId": "n048", "isFake": true,  "createdAt": "2025-02-27T08:15:00Z" },
+  { "id": "v143", "newsId": "n048", "isFake": false, "createdAt": "2025-02-27T08:25:00Z" },
+  { "id": "v144", "newsId": "n048", "isFake": true,  "createdAt": "2025-02-27T08:35:00Z" },
+
+  { "id": "v145", "newsId": "n049", "isFake": false, "createdAt": "2025-02-27T14:45:00Z" },
+  { "id": "v146", "newsId": "n049", "isFake": false, "createdAt": "2025-02-27T14:52:00Z" },
+  { "id": "v147", "newsId": "n049", "isFake": true,  "createdAt": "2025-02-27T15:00:00Z" },
+
+  { "id": "v148", "newsId": "n050", "isFake": true,  "createdAt": "2025-02-28T09:35:00Z" },
+  { "id": "v149", "newsId": "n050", "isFake": false, "createdAt": "2025-02-28T09:45:00Z" },
+  { "id": "v150", "newsId": "n050", "isFake": true,  "createdAt": "2025-02-28T09:55:00Z" }
+]
+
+

@@ -7,9 +7,9 @@
 - [x] Create base folders: `src/components`, `src/pages`, `src/stores`, `src/mock`
 
 ### Mock Data
-- [ ] Create `src/mock/news.json` (≥ 50 items)
-- [ ] Create `src/mock/comments.json` (seed multiple per news)
-- [ ] Create `src/mock/votes.json` (fake & non‑fake spread)
+ - [x] Create `src/mock/news.json` (≥ 50 items)
+ - [x] Create `src/mock/comments.json` (seed multiple per news)
+ - [x] Create `src/mock/votes.json` (fake & non‑fake spread)
 
 ### State (Pinia)
 - [ ] Implement `useNewsStore` with state, getters, actions described in plan

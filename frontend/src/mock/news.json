@@ -1,0 +1,504 @@
+[
+  {
+    "id": "n001",
+    "title": "City Council Approves New Green Spaces Initiative",
+    "summary": "Plan adds micro‑parks and rooftop gardens across downtown.",
+    "content": "The City Council unanimously approved a multi‑year initiative to add micro‑parks, rooftop gardens, and street trees aimed at reducing heat islands and improving air quality.",
+    "isFake": false,
+    "reporterName": "Alex Kim",
+    "reportedAt": "2025-01-05T10:12:00Z",
+    "imageUrl": "https://picsum.photos/seed/n001/800/500"
+  },
+  {
+    "id": "n002",
+    "title": "Tech Firm Announces Affordable Home Battery System",
+    "summary": "New unit targets apartments with modular design.",
+    "content": "VoltNest unveiled a modular, apartment‑friendly home battery targeting renters, with installation that avoids permanent fixtures and promises peak‑shaving savings.",
+    "isFake": false,
+    "reporterName": "Jordan Lee",
+    "reportedAt": "2025-01-06T09:20:00Z",
+    "imageUrl": "https://picsum.photos/seed/n002/800/500"
+  },
+  {
+    "id": "n003",
+    "title": "Study Claims Coffee Boosts Memory by 30% Overnight",
+    "summary": "Researchers publish small cohort results; experts urge caution.",
+    "content": "A small observational study suggested a correlation between evening coffee consumption and next‑day memory performance. Independent experts cautioned against over‑interpreting the findings due to confounders.",
+    "isFake": true,
+    "reporterName": "Sam Patel",
+    "reportedAt": "2025-01-07T14:45:00Z",
+    "imageUrl": "https://picsum.photos/seed/n003/800/500"
+  },
+  {
+    "id": "n004",
+    "title": "Regional Rail Adds Late‑Night Service On Weekends",
+    "summary": "Transit authority expands coverage for nightlife and shift workers.",
+    "content": "The transit authority announced additional late‑night trains on Fridays and Saturdays to improve access for nightlife patrons and overnight shift workers across the region.",
+    "isFake": false,
+    "reporterName": "Morgan Chen",
+    "reportedAt": "2025-01-08T07:10:00Z",
+    "imageUrl": "https://picsum.photos/seed/n004/800/500"
+  },
+  {
+    "id": "n005",
+    "title": "Local Startup Uses AI To Reduce Food Waste in Cafeterias",
+    "summary": "Computer vision forecasts portions and prevents over‑prepping.",
+    "content": "PlateSight launched a computer‑vision system that forecasts serving volumes by time block, helping cafeterias adjust prep levels and reduce daily food waste by up to 18% in pilots.",
+    "isFake": false,
+    "reporterName": "Riley Nguyen",
+    "reportedAt": "2025-01-08T13:02:00Z",
+    "imageUrl": "https://picsum.photos/seed/n005/800/500"
+  },
+  {
+    "id": "n006",
+    "title": "Ocean Cleanup Drone Allegedly Finds Gold Bars Near Pier",
+    "summary": "Viral post shows blurry footage; authorities find no evidence.",
+    "content": "A viral clip purportedly showing an ocean cleanup drone recovering gold bars near the old pier has been debunked by local authorities, who reported no such recovery in official logs.",
+    "isFake": true,
+    "reporterName": "Taylor Brooks",
+    "reportedAt": "2025-01-09T11:30:00Z",
+    "imageUrl": "https://picsum.photos/seed/n006/800/500"
+  },
+  {
+    "id": "n007",
+    "title": "University Opens Free Night Classes For Community",
+    "summary": "Program focuses on digital literacy and resume workshops.",
+    "content": "The university is opening free evening classes to the public covering digital literacy, resume building, and interview prep, funded by a workforce development grant.",
+    "isFake": false,
+    "reporterName": "Casey Diaz",
+    "reportedAt": "2025-01-10T18:50:00Z",
+    "imageUrl": "https://picsum.photos/seed/n007/800/500"
+  },
+  {
+    "id": "n008",
+    "title": "New App Promises To Read Dreams Through Micro‑Movements",
+    "summary": "Developers claim 85% accuracy without peer review.",
+    "content": "An app claiming to decode dreams using micro‑movement signals collected via a smartphone accelerometer has drawn skepticism from sleep researchers due to a lack of published validation.",
+    "isFake": true,
+    "reporterName": "Jamie Park",
+    "reportedAt": "2025-01-11T06:40:00Z",
+    "imageUrl": "https://picsum.photos/seed/n008/800/500"
+  },
+  {
+    "id": "n009",
+    "title": "Farmers Market Extends Season With Heated Tents",
+    "summary": "Vendors to continue through early spring weekends.",
+    "content": "The downtown farmers market will extend through early spring using heated tents and staggered vendor schedules to maintain turnout during colder weeks.",
+    "isFake": false,
+    "reporterName": "Avery Shah",
+    "reportedAt": "2025-01-12T09:00:00Z",
+    "imageUrl": "https://picsum.photos/seed/n009/800/500"
+  },
+  {
+    "id": "n010",
+    "title": "Private Space Company Tests Reusable Upper Stage",
+    "summary": "Engine relight and controlled splashdown demonstrated.",
+    "content": "Astral Dynamics completed a test of a reusable upper stage featuring engine relight and controlled splashdown, a step toward fully reusable orbital vehicles.",
+    "isFake": false,
+    "reporterName": "Cameron Rossi",
+    "reportedAt": "2025-01-12T15:25:00Z",
+    "imageUrl": "https://picsum.photos/seed/n010/800/500"
+  },
+  {
+    "id": "n011",
+    "title": "Viral Hack Says Free Internet With Foil On Router Antennas",
+    "summary": "Experts warn it's misleading and may degrade signal.",
+    "content": "A trending video suggests wrapping router antennas in foil grants free internet. Networking experts called it misinformation that can interfere with signal patterns and performance.",
+    "isFake": true,
+    "reporterName": "Alex Kim",
+    "reportedAt": "2025-01-13T08:00:00Z",
+    "imageUrl": "https://picsum.photos/seed/n011/800/500"
+  },
+  {
+    "id": "n012",
+    "title": "City Library Adds Makerspace With 3D Printers",
+    "summary": "Community access to prototyping tools expands.",
+    "content": "The central library unveiled a makerspace with 3D printers, laser cutters, and soldering stations to support community projects and STEM education.",
+    "isFake": false,
+    "reporterName": "Jordan Lee",
+    "reportedAt": "2025-01-13T16:10:00Z",
+    "imageUrl": "https://picsum.photos/seed/n012/800/500"
+  },
+  {
+    "id": "n013",
+    "title": "Influencer Claims Salt Water Cures Seasonal Flu",
+    "summary": "Medical professionals refute unproven remedy.",
+    "content": "A social media post claiming that drinking salt water cures seasonal flu has been debunked by physicians as potentially dangerous and unsupported by evidence.",
+    "isFake": true,
+    "reporterName": "Sam Patel",
+    "reportedAt": "2025-01-14T12:22:00Z",
+    "imageUrl": "https://picsum.photos/seed/n013/800/500"
+  },
+  {
+    "id": "n014",
+    "title": "Neighborhood Pilot Replaces Some Parking With Bike Corrals",
+    "summary": "Early data shows increased retail foot traffic.",
+    "content": "A neighborhood pilot replacing select parking spots with bike corrals and delivery zones reported a modest uptick in foot traffic and shorter double‑parking durations.",
+    "isFake": false,
+    "reporterName": "Morgan Chen",
+    "reportedAt": "2025-01-15T10:55:00Z",
+    "imageUrl": "https://picsum.photos/seed/n014/800/500"
+  },
+  {
+    "id": "n015",
+    "title": "Startup Says It Can 10x Plant Growth With Ultrasound",
+    "summary": "Press release lacks peer‑reviewed backing.",
+    "content": "GrowWave claims ultrasound stimulation accelerates plant growth tenfold. Botanists urged careful validation, noting prior studies show only limited effects in controlled settings.",
+    "isFake": true,
+    "reporterName": "Riley Nguyen",
+    "reportedAt": "2025-01-15T17:40:00Z",
+    "imageUrl": "https://picsum.photos/seed/n015/800/500"
+  },
+  {
+    "id": "n016",
+    "title": "Regional Hospital Opens New Emergency Wing",
+    "summary": "Additional beds and imaging capacity reduce wait times.",
+    "content": "A new emergency wing opened today with expanded triage, additional beds, and on‑site imaging to reduce patient wait times during peak hours.",
+    "isFake": false,
+    "reporterName": "Taylor Brooks",
+    "reportedAt": "2025-01-16T09:05:00Z",
+    "imageUrl": "https://picsum.photos/seed/n016/800/500"
+  },
+  {
+    "id": "n017",
+    "title": "Video Claims Moon Is A Hologram Projected By Satellites",
+    "summary": "Astronomers dismiss recycled conspiracy theory.",
+    "content": "A resurfaced conspiracy theory alleging the Moon is a hologram has circulated again. Astronomers reiterated abundant physical evidence disproving the claim.",
+    "isFake": true,
+    "reporterName": "Casey Diaz",
+    "reportedAt": "2025-01-16T21:22:00Z",
+    "imageUrl": "https://picsum.photos/seed/n017/800/500"
+  },
+  {
+    "id": "n018",
+    "title": "County Launches Free Tree Giveaway For Residents",
+    "summary": "Homeowners can request up to two native saplings.",
+    "content": "The county's sustainability office launched a free tree program offering up to two native saplings per household while supplies last.",
+    "isFake": false,
+    "reporterName": "Jamie Park",
+    "reportedAt": "2025-01-17T08:40:00Z",
+    "imageUrl": "https://picsum.photos/seed/n018/800/500"
+  },
+  {
+    "id": "n019",
+    "title": "Miracle Mineral Solution Resurfaces As Anti‑Virus Cure",
+    "summary": "Health agencies reiterate warnings against ingestion.",
+    "content": "Posts promoting so‑called Miracle Mineral Solution as an antiviral cure have reappeared. Health agencies emphasized it is dangerous and not an approved treatment.",
+    "isFake": true,
+    "reporterName": "Avery Shah",
+    "reportedAt": "2025-01-17T13:15:00Z",
+    "imageUrl": "https://picsum.photos/seed/n019/800/500"
+  },
+  {
+    "id": "n020",
+    "title": "High‑Speed Fiber Expansion Reaches 20,000 More Homes",
+    "summary": "Phase 2 buildout focuses on underserved blocks.",
+    "content": "Netline announced phase 2 of its fiber rollout, connecting an additional 20,000 homes with an emphasis on previously underserved neighborhoods.",
+    "isFake": false,
+    "reporterName": "Cameron Rossi",
+    "reportedAt": "2025-01-18T11:30:00Z",
+    "imageUrl": "https://picsum.photos/seed/n020/800/500"
+  },
+  {
+    "id": "n021",
+    "title": "Post Claims Lemon Juice Prevents All Colds",
+    "summary": "Doctors: nutrition helps, but no single cure‑all.",
+    "content": "A trending post asserts lemon juice prevents all colds. Physicians note a balanced diet supports immunity, but no food guarantees prevention.",
+    "isFake": true,
+    "reporterName": "Alex Kim",
+    "reportedAt": "2025-01-18T15:52:00Z",
+    "imageUrl": "https://picsum.photos/seed/n021/800/500"
+  },
+  {
+    "id": "n022",
+    "title": "New Coastal Trail Segment Opens To Cyclists",
+    "summary": "Scenic route adds safer separation from traffic.",
+    "content": "A newly opened coastal trail segment adds separated cycling lanes and improved signage, connecting two popular waterfront parks.",
+    "isFake": false,
+    "reporterName": "Jordan Lee",
+    "reportedAt": "2025-01-19T09:05:00Z",
+    "imageUrl": "https://picsum.photos/seed/n022/800/500"
+  },
+  {
+    "id": "n023",
+    "title": "Startup Claims Headphones Can Teach A Language Overnight",
+    "summary": "Bold claims lack independent validation.",
+    "content": "LinguaNap markets headphones that allegedly teach languages during sleep. Linguists say evidence for sleep‑learning remains limited and mixed.",
+    "isFake": true,
+    "reporterName": "Sam Patel",
+    "reportedAt": "2025-01-19T20:20:00Z",
+    "imageUrl": "https://picsum.photos/seed/n023/800/500"
+  },
+  {
+    "id": "n024",
+    "title": "Urban School Adds Free Breakfast For All Students",
+    "summary": "Program aims to improve attendance and focus.",
+    "content": "An urban district expanded free breakfast to all students after a pilot showed improved attendance and classroom engagement.",
+    "isFake": false,
+    "reporterName": "Morgan Chen",
+    "reportedAt": "2025-01-20T07:45:00Z",
+    "imageUrl": "https://picsum.photos/seed/n024/800/500"
+  },
+  {
+    "id": "n025",
+    "title": "Photos Claim River Ran Backwards After Minor Quake",
+    "summary": "Geologists: images are edited; flow unchanged.",
+    "content": "Edited photos claiming a river reversed flow after a minor quake have circulated. Geologists confirmed no such reversal occurred.",
+    "isFake": true,
+    "reporterName": "Riley Nguyen",
+    "reportedAt": "2025-01-20T12:00:00Z",
+    "imageUrl": "https://picsum.photos/seed/n025/800/500"
+  },
+  {
+    "id": "n026",
+    "title": "Community Garden Network Expands To 12 New Lots",
+    "summary": "Vacant parcels converted into food‑growing spaces.",
+    "content": "A nonprofit secured 12 vacant lots for community gardens, partnering with local residents to increase access to fresh produce.",
+    "isFake": false,
+    "reporterName": "Taylor Brooks",
+    "reportedAt": "2025-01-21T10:10:00Z",
+    "imageUrl": "https://picsum.photos/seed/n026/800/500"
+  },
+  {
+    "id": "n027",
+    "title": "Hoax Map Shows Sharks In City Fountain After Storm",
+    "summary": "Composite image traced to old meme template.",
+    "content": "A viral image of sharks in a city fountain after a storm has been debunked as a composite from an old meme template.",
+    "isFake": true,
+    "reporterName": "Casey Diaz",
+    "reportedAt": "2025-01-21T22:18:00Z",
+    "imageUrl": "https://picsum.photos/seed/n027/800/500"
+  },
+  {
+    "id": "n028",
+    "title": "Transit App Adds Real‑Time Crowding Indicators",
+    "summary": "Data helps riders choose less crowded vehicles.",
+    "content": "The city's transit app now shows real‑time crowding estimates based on door sensor counts and historical patterns.",
+    "isFake": false,
+    "reporterName": "Jamie Park",
+    "reportedAt": "2025-01-22T06:35:00Z",
+    "imageUrl": "https://picsum.photos/seed/n028/800/500"
+  },
+  {
+    "id": "n029",
+    "title": "Claim Says Blue Light Glasses Double Exam Scores",
+    "summary": "No clinical evidence supports such a jump.",
+    "content": "A claim that blue light blocking glasses double exam scores lacks credible supporting studies, according to education researchers.",
+    "isFake": true,
+    "reporterName": "Avery Shah",
+    "reportedAt": "2025-01-22T12:55:00Z",
+    "imageUrl": "https://picsum.photos/seed/n029/800/500"
+  },
+  {
+    "id": "n030",
+    "title": "Harbor To Host Floating Art Exhibit This Spring",
+    "summary": "Local artists to display installations on barges.",
+    "content": "The harbor authority approved a floating art exhibit featuring installations on moored barges, with free weekend viewings.",
+    "isFake": false,
+    "reporterName": "Cameron Rossi",
+    "reportedAt": "2025-01-23T09:25:00Z",
+    "imageUrl": "https://picsum.photos/seed/n030/800/500"
+  },
+  {
+    "id": "n031",
+    "title": "Post Claims Plants Grow Faster Under Constant Music",
+    "summary": "Effect sizes exaggerated in viral clips.",
+    "content": "Viral clips exaggerate claims that constant music dramatically boosts plant growth. Horticultural studies show mixed, small effects at best.",
+    "isFake": true,
+    "reporterName": "Alex Kim",
+    "reportedAt": "2025-01-23T15:40:00Z",
+    "imageUrl": "https://picsum.photos/seed/n031/800/500"
+  },
+  {
+    "id": "n032",
+    "title": "City Adds Curb‑Level Protected Crosswalks",
+    "summary": "Raised tables slow cars; early safety gains noted.",
+    "content": "New curb‑level crosswalks with raised tables and daylighting have reduced near‑miss incidents at pilot intersections, according to traffic engineers.",
+    "isFake": false,
+    "reporterName": "Jordan Lee",
+    "reportedAt": "2025-01-24T08:05:00Z",
+    "imageUrl": "https://picsum.photos/seed/n032/800/500"
+  },
+  {
+    "id": "n033",
+    "title": "Supposed Ancient Map Proves Lost Continent Nearby",
+    "summary": "Historians call the artifact a modern forgery.",
+    "content": "A widely shared image of an 'ancient map' allegedly proving a nearby lost continent has been identified by historians as a 20th‑century forgery.",
+    "isFake": true,
+    "reporterName": "Sam Patel",
+    "reportedAt": "2025-01-24T17:12:00Z",
+    "imageUrl": "https://picsum.photos/seed/n033/800/500"
+  },
+  {
+    "id": "n034",
+    "title": "Public Health Dept. Rolls Out Free Vaccination Vans",
+    "summary": "Mobile clinics to serve outreach events weekly.",
+    "content": "Mobile vaccination vans will serve weekly outreach events in parks and community centers to expand access to routine immunizations.",
+    "isFake": false,
+    "reporterName": "Morgan Chen",
+    "reportedAt": "2025-01-25T10:18:00Z",
+    "imageUrl": "https://picsum.photos/seed/n034/800/500"
+  },
+  {
+    "id": "n035",
+    "title": "Claim: Chewing Ice Aligns Teeth Without Braces",
+    "summary": "Dentists warn it's false and may damage enamel.",
+    "content": "A circulating claim that chewing ice aligns teeth is false. Dentists warn it can chip teeth and damage enamel.",
+    "isFake": true,
+    "reporterName": "Riley Nguyen",
+    "reportedAt": "2025-01-25T13:44:00Z",
+    "imageUrl": "https://picsum.photos/seed/n035/800/500"
+  },
+  {
+    "id": "n036",
+    "title": "Regional Grid Integrates More Community Solar",
+    "summary": "Subscribers can offset bills without rooftop panels.",
+    "content": "The regional grid operator approved additional community solar projects, enabling subscribers to offset portions of their electricity bills.",
+    "isFake": false,
+    "reporterName": "Taylor Brooks",
+    "reportedAt": "2025-01-26T09:30:00Z",
+    "imageUrl": "https://picsum.photos/seed/n036/800/500"
+  },
+  {
+    "id": "n037",
+    "title": "Hoax Says City Banned All Bicycles Downtown",
+    "summary": "No blanket ban exists; only event‑specific closures.",
+    "content": "A rumor that all bicycles are banned downtown is false. Officials clarified only temporary closures apply during specific events.",
+    "isFake": true,
+    "reporterName": "Casey Diaz",
+    "reportedAt": "2025-01-26T21:05:00Z",
+    "imageUrl": "https://picsum.photos/seed/n037/800/500"
+  },
+  {
+    "id": "n038",
+    "title": "Museum Extends Hours For Blockbuster Exhibit",
+    "summary": "Late evenings on Fridays/Saturdays for next month.",
+    "content": "The city museum will extend evening hours on weekends to accommodate high interest in its latest exhibit.",
+    "isFake": false,
+    "reporterName": "Jamie Park",
+    "reportedAt": "2025-01-27T07:52:00Z",
+    "imageUrl": "https://picsum.photos/seed/n038/800/500"
+  },
+  {
+    "id": "n039",
+    "title": "Post Claims Magnets Pull Toxins Out Of Blood",
+    "summary": "Medical claim is baseless pseudoscience.",
+    "content": "A post alleging that household magnets can 'pull toxins' out of blood is baseless and medically inaccurate, experts say.",
+    "isFake": true,
+    "reporterName": "Avery Shah",
+    "reportedAt": "2025-01-27T14:28:00Z",
+    "imageUrl": "https://picsum.photos/seed/n039/800/500"
+  },
+  {
+    "id": "n040",
+    "title": "Port Authority Pilots Shore Power For Cargo Ships",
+    "summary": "Program aims to cut diesel emissions at berth.",
+    "content": "Cargo ships at two terminals will test shore power hookups to reduce diesel emissions while docked, part of a broader clean air initiative.",
+    "isFake": false,
+    "reporterName": "Cameron Rossi",
+    "reportedAt": "2025-01-28T10:00:00Z",
+    "imageUrl": "https://picsum.photos/seed/n040/800/500"
+  },
+  {
+    "id": "n041",
+    "title": "Viral Tip Says Onions Absorb Viruses In Rooms",
+    "summary": "Food safety officials call claim false.",
+    "content": "A viral tip that cut onions absorb viruses in rooms has been debunked; food safety officials warn against leaving cut onions unrefrigerated.",
+    "isFake": true,
+    "reporterName": "Alex Kim",
+    "reportedAt": "2025-01-28T18:35:00Z",
+    "imageUrl": "https://picsum.photos/seed/n041/800/500"
+  },
+  {
+    "id": "n042",
+    "title": "Regional Park Adds Night Sky Viewing Events",
+    "summary": "Volunteer astronomers host monthly star parties.",
+    "content": "The regional park district announced monthly night sky events with volunteer astronomers and telescope stations.",
+    "isFake": false,
+    "reporterName": "Jordan Lee",
+    "reportedAt": "2025-01-29T08:18:00Z",
+    "imageUrl": "https://picsum.photos/seed/n042/800/500"
+  },
+  {
+    "id": "n043",
+    "title": "Video Claims Airplane Contrails Are Metal Sprays",
+    "summary": "Atmospheric scientists refute conspiracy claim.",
+    "content": "A viral video mischaracterizes airplane contrails as 'metal sprays'. Atmospheric scientists explain contrails are ice crystals from engine exhaust moisture.",
+    "isFake": true,
+    "reporterName": "Sam Patel",
+    "reportedAt": "2025-01-29T16:22:00Z",
+    "imageUrl": "https://picsum.photos/seed/n043/800/500"
+  },
+  {
+    "id": "n044",
+    "title": "Main Street To Add Pedestrian‑Only Sundays",
+    "summary": "Streets open for walking, dining, and performances.",
+    "content": "City council approved pedestrian‑only Sundays on Main Street, allowing outdoor dining and performances during designated hours.",
+    "isFake": false,
+    "reporterName": "Morgan Chen",
+    "reportedAt": "2025-01-30T09:05:00Z",
+    "imageUrl": "https://picsum.photos/seed/n044/800/500"
+  },
+  {
+    "id": "n045",
+    "title": "Miracle Bracelet Allegedly Shields From 5G",
+    "summary": "Product claims lack scientific basis, experts say.",
+    "content": "A '5G shield' bracelet trending online offers no proven protection against radio signals and may be a scam, according to engineers and consumer advocates.",
+    "isFake": true,
+    "reporterName": "Riley Nguyen",
+    "reportedAt": "2025-01-30T13:46:00Z",
+    "imageUrl": "https://picsum.photos/seed/n045/800/500"
+  },
+  {
+    "id": "n046",
+    "title": "Library Partners With Schools On Homework Help Line",
+    "summary": "Evening chat connects students with librarians.",
+    "content": "A new partnership launches an evening homework help chat staffed by librarians and trained volunteers.",
+    "isFake": false,
+    "reporterName": "Taylor Brooks",
+    "reportedAt": "2025-01-31T10:20:00Z",
+    "imageUrl": "https://picsum.photos/seed/n046/800/500"
+  },
+  {
+    "id": "n047",
+    "title": "Post Says Solar Panels Stop Working In Winter",
+    "summary": "Panels still generate power with proper daylight.",
+    "content": "A post claiming solar panels 'shut off' in winter is misleading. Panels generate power with daylight, albeit at reduced output under certain conditions.",
+    "isFake": true,
+    "reporterName": "Casey Diaz",
+    "reportedAt": "2025-01-31T19:05:00Z",
+    "imageUrl": "https://picsum.photos/seed/n047/800/500"
+  },
+  {
+    "id": "n048",
+    "title": "City Launches Tool To Track Pothole Repairs",
+    "summary": "Open data map shows requests and completion status.",
+    "content": "An open data dashboard now tracks pothole repair requests, assignments, and completion timelines across neighborhoods.",
+    "isFake": false,
+    "reporterName": "Jamie Park",
+    "reportedAt": "2025-02-01T08:10:00Z",
+    "imageUrl": "https://picsum.photos/seed/n048/800/500"
+  },
+  {
+    "id": "n049",
+    "title": "Hoax: Boiling Water Turns Into Fuel With Sugar",
+    "summary": "Chemists say video is staged; impossible as shown.",
+    "content": "A hoax video claims boiling water plus sugar becomes 'fuel'. Chemists say the demonstration is staged and violates conservation of energy.",
+    "isFake": true,
+    "reporterName": "Avery Shah",
+    "reportedAt": "2025-02-01T14:44:00Z",
+    "imageUrl": "https://picsum.photos/seed/n049/800/500"
+  },
+  {
+    "id": "n050",
+    "title": "Harbor Ferry Adds Bike Racks And Weekend Service",
+    "summary": "Commuters gain flexible multimodal options.",
+    "content": "The harbor ferry operator added bike racks and expanded weekend service to accommodate growing demand for multimodal commutes.",
+    "isFake": false,
+    "reporterName": "Cameron Rossi",
+    "reportedAt": "2025-02-02T09:30:00Z",
+    "imageUrl": "https://picsum.photos/seed/n050/800/500"
+  }
+]
+
+

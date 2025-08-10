@@ -1,0 +1,153 @@
+[
+  { "id": "c001", "newsId": "n001", "text": "Excited to see more green spaces downtown!", "createdAt": "2025-02-03T10:05:00Z" },
+  { "id": "c002", "newsId": "n001", "text": "Hope maintenance is funded long‑term.", "createdAt": "2025-02-03T12:22:00Z", "imageUrl": "https://picsum.photos/seed/c002/600/400" },
+
+  { "id": "c003", "newsId": "n002", "text": "Apartment battery sounds perfect for renters.", "createdAt": "2025-02-04T08:45:00Z" },
+  { "id": "c004", "newsId": "n002", "text": "Curious about fire safety certifications.", "createdAt": "2025-02-04T09:10:00Z" },
+
+  { "id": "c005", "newsId": "n003", "text": "Sounds like hype—need larger sample sizes.", "createdAt": "2025-02-04T13:00:00Z" },
+  { "id": "c006", "newsId": "n003", "text": "Please link the study; correlation isn't causation.", "createdAt": "2025-02-04T13:30:00Z" },
+
+  { "id": "c007", "newsId": "n004", "text": "Great for service workers getting off late.", "createdAt": "2025-02-05T07:00:00Z" },
+  { "id": "c008", "newsId": "n004", "text": "Add security staff on platforms at night.", "createdAt": "2025-02-05T07:40:00Z" },
+
+  { "id": "c009", "newsId": "n005", "text": "Love the food waste reduction angle.", "createdAt": "2025-02-05T11:25:00Z" },
+  { "id": "c010", "newsId": "n005", "text": "Would like to see method details published.", "createdAt": "2025-02-05T12:05:00Z" },
+
+  { "id": "c011", "newsId": "n006", "text": "That drone video looked fake from the start.", "createdAt": "2025-02-06T09:32:00Z" },
+  { "id": "c012", "newsId": "n006", "text": "Authorities denying it was a giveaway.", "createdAt": "2025-02-06T09:55:00Z" },
+
+  { "id": "c013", "newsId": "n007", "text": "Free classes will help a lot of people.", "createdAt": "2025-02-06T18:15:00Z" },
+  { "id": "c014", "newsId": "n007", "text": "Please include child care options.", "createdAt": "2025-02-06T19:10:00Z" },
+
+  { "id": "c015", "newsId": "n008", "text": "85% accuracy without peer review? hmm.", "createdAt": "2025-02-07T06:20:00Z" },
+  { "id": "c016", "newsId": "n008", "text": "Sleep researchers will have a field day.", "createdAt": "2025-02-07T06:58:00Z" },
+
+  { "id": "c017", "newsId": "n009", "text": "Heated tents—nice! I'll be there.", "createdAt": "2025-02-07T09:05:00Z" },
+  { "id": "c018", "newsId": "n009", "text": "Vendors should rotate to stay fair.", "createdAt": "2025-02-07T09:40:00Z" },
+
+  { "id": "c019", "newsId": "n010", "text": "Reusable upper stage is huge progress.", "createdAt": "2025-02-07T15:40:00Z" },
+  { "id": "c020", "newsId": "n010", "text": "How many relights can it handle?", "createdAt": "2025-02-07T16:00:00Z" },
+
+  { "id": "c021", "newsId": "n011", "text": "Foil on antennas? classic misinformation.", "createdAt": "2025-02-08T08:10:00Z" },
+  { "id": "c022", "newsId": "n011", "text": "Signal patterns don't work like that.", "createdAt": "2025-02-08T08:35:00Z" },
+
+  { "id": "c023", "newsId": "n012", "text": "Makerspace will be packed on weekends.", "createdAt": "2025-02-08T16:20:00Z" },
+  { "id": "c024", "newsId": "n012", "text": "Please offer soldering basics workshop!", "createdAt": "2025-02-08T16:45:00Z" },
+
+  { "id": "c025", "newsId": "n013", "text": "Do not drink salt water, folks.", "createdAt": "2025-02-09T12:25:00Z" },
+  { "id": "c026", "newsId": "n013", "text": "Report posts spreading this.", "createdAt": "2025-02-09T12:50:00Z" },
+
+  { "id": "c027", "newsId": "n014", "text": "Bike corrals look great outside cafes.", "createdAt": "2025-02-10T10:55:00Z" },
+  { "id": "c028", "newsId": "n014", "text": "Businesses should give feedback on sales.", "createdAt": "2025-02-10T11:15:00Z" },
+
+  { "id": "c029", "newsId": "n015", "text": "Ultrasound claims are very bold.", "createdAt": "2025-02-10T17:45:00Z" },
+  { "id": "c030", "newsId": "n015", "text": "Where's the peer‑reviewed paper?", "createdAt": "2025-02-10T18:05:00Z" },
+
+  { "id": "c031", "newsId": "n016", "text": "Wait times have been brutal—great news.", "createdAt": "2025-02-11T09:12:00Z" },
+  { "id": "c032", "newsId": "n016", "text": "Add an on‑site pharmacist please.", "createdAt": "2025-02-11T09:40:00Z" },
+
+  { "id": "c033", "newsId": "n017", "text": "Hologram moon again? yikes.", "createdAt": "2025-02-11T21:05:00Z" },
+  { "id": "c034", "newsId": "n017", "text": "Astronomy 101 debunks this.", "createdAt": "2025-02-11T21:20:00Z" },
+
+  { "id": "c035", "newsId": "n018", "text": "Planting native species is key.", "createdAt": "2025-02-12T08:40:00Z" },
+  { "id": "c036", "newsId": "n018", "text": "Where can I pick up the saplings?", "createdAt": "2025-02-12T09:05:00Z" },
+
+  { "id": "c037", "newsId": "n019", "text": "MMS is dangerous—do not drink it.", "createdAt": "2025-02-12T13:30:00Z" },
+  { "id": "c038", "newsId": "n019", "text": "Report to the platform asap.", "createdAt": "2025-02-12T13:55:00Z" },
+
+  { "id": "c039", "newsId": "n020", "text": "Happy to see underserved areas prioritized.", "createdAt": "2025-02-13T11:35:00Z" },
+  { "id": "c040", "newsId": "n020", "text": "When does my block go live?", "createdAt": "2025-02-13T11:58:00Z" },
+
+  { "id": "c041", "newsId": "n021", "text": "No magic foods prevent all colds.", "createdAt": "2025-02-13T16:05:00Z" },
+  { "id": "c042", "newsId": "n021", "text": "Hydration and rest matter more.", "createdAt": "2025-02-13T16:28:00Z" },
+
+  { "id": "c043", "newsId": "n022", "text": "That new trail is gorgeous.", "createdAt": "2025-02-14T09:15:00Z" },
+  { "id": "c044", "newsId": "n022", "text": "Please add more water fountains.", "createdAt": "2025-02-14T09:40:00Z" },
+
+  { "id": "c045", "newsId": "n023", "text": "Sleep‑learning still isn't proven.", "createdAt": "2025-02-14T20:25:00Z" },
+  { "id": "c046", "newsId": "n023", "text": "Marketing claims are getting wild.", "createdAt": "2025-02-14T20:45:00Z" },
+
+  { "id": "c047", "newsId": "n024", "text": "Kids learn better with breakfast.", "createdAt": "2025-02-15T07:50:00Z" },
+  { "id": "c048", "newsId": "n024", "text": "Allergies menu labeling please.", "createdAt": "2025-02-15T08:05:00Z" },
+
+  { "id": "c049", "newsId": "n025", "text": "Those photos are clearly edited.", "createdAt": "2025-02-15T12:10:00Z" },
+  { "id": "c050", "newsId": "n025", "text": "Reverse flow requires extreme conditions.", "createdAt": "2025-02-15T12:28:00Z" },
+
+  { "id": "c051", "newsId": "n026", "text": "Community gardens unite neighbors.", "createdAt": "2025-02-16T10:05:00Z" },
+  { "id": "c052", "newsId": "n026", "text": "Secure water access before planting.", "createdAt": "2025-02-16T10:25:00Z" },
+
+  { "id": "c053", "newsId": "n027", "text": "Sharks in fountains is a classic hoax.", "createdAt": "2025-02-16T22:05:00Z" },
+  { "id": "c054", "newsId": "n027", "text": "Reverse image search finds the template.", "createdAt": "2025-02-16T22:20:00Z" },
+
+  { "id": "c055", "newsId": "n028", "text": "Crowding info will save time.", "createdAt": "2025-02-17T06:40:00Z" },
+  { "id": "c056", "newsId": "n028", "text": "Please expose an API endpoint.", "createdAt": "2025-02-17T07:05:00Z" },
+
+  { "id": "c057", "newsId": "n029", "text": "Blue light claims are overstated.", "createdAt": "2025-02-17T12:40:00Z" },
+  { "id": "c058", "newsId": "n029", "text": "Study links or it didn't happen.", "createdAt": "2025-02-17T13:00:00Z" },
+
+  { "id": "c059", "newsId": "n030", "text": "Floating art exhibit sounds fun!", "createdAt": "2025-02-18T09:30:00Z" },
+  { "id": "c060", "newsId": "n030", "text": "Accessibility details for docks?", "createdAt": "2025-02-18T09:55:00Z" },
+
+  { "id": "c061", "newsId": "n031", "text": "Music effects are tiny at best.", "createdAt": "2025-02-18T15:50:00Z" },
+  { "id": "c062", "newsId": "n031", "text": "Videos cherry‑pick examples.", "createdAt": "2025-02-18T16:05:00Z" },
+
+  { "id": "c063", "newsId": "n032", "text": "Raised crosswalks feel safer already.", "createdAt": "2025-02-19T08:12:00Z" },
+  { "id": "c064", "newsId": "n032", "text": "Drivers still speed—need enforcement.", "createdAt": "2025-02-19T08:34:00Z" },
+
+  { "id": "c065", "newsId": "n033", "text": "That 'ancient map' font is modern.", "createdAt": "2025-02-19T17:20:00Z" },
+  { "id": "c066", "newsId": "n033", "text": "Forgery confirmed by historians.", "createdAt": "2025-02-19T17:42:00Z" },
+
+  { "id": "c067", "newsId": "n034", "text": "Mobile clinics reduce barriers.", "createdAt": "2025-02-20T10:15:00Z" },
+  { "id": "c068", "newsId": "n034", "text": "Add evening hours near campuses.", "createdAt": "2025-02-20T10:40:00Z" },
+
+  { "id": "c069", "newsId": "n035", "text": "Do not chew ice—bad for teeth.", "createdAt": "2025-02-20T13:55:00Z" },
+  { "id": "c070", "newsId": "n035", "text": "Dentist here: please don't.", "createdAt": "2025-02-20T14:18:00Z" },
+
+  { "id": "c071", "newsId": "n036", "text": "Community solar is a win.", "createdAt": "2025-02-21T09:30:00Z" },
+  { "id": "c072", "newsId": "n036", "text": "When can we subscribe?", "createdAt": "2025-02-21T09:55:00Z" },
+
+  { "id": "c073", "newsId": "n037", "text": "No, bikes aren't banned downtown.", "createdAt": "2025-02-21T21:00:00Z" },
+  { "id": "c074", "newsId": "n037", "text": "Event‑specific closures only.", "createdAt": "2025-02-21T21:18:00Z" },
+
+  { "id": "c075", "newsId": "n038", "text": "Great—more time to see the exhibit.", "createdAt": "2025-02-22T07:55:00Z" },
+  { "id": "c076", "newsId": "n038", "text": "Hope the cafe stays open late too.", "createdAt": "2025-02-22T08:12:00Z" },
+
+  { "id": "c077", "newsId": "n039", "text": "Magnets do not 'pull toxins' out.", "createdAt": "2025-02-22T14:30:00Z" },
+  { "id": "c078", "newsId": "n039", "text": "Consult real medical sources.", "createdAt": "2025-02-22T14:52:00Z" },
+
+  { "id": "c079", "newsId": "n040", "text": "Shore power reduces emissions a lot.", "createdAt": "2025-02-23T10:00:00Z" },
+  { "id": "c080", "newsId": "n040", "text": "What ships are compatible?", "createdAt": "2025-02-23T10:20:00Z" },
+
+  { "id": "c081", "newsId": "n041", "text": "Onions don't absorb viruses.", "createdAt": "2025-02-23T18:30:00Z" },
+  { "id": "c082", "newsId": "n041", "text": "Food safety matters.", "createdAt": "2025-02-23T18:55:00Z" },
+
+  { "id": "c083", "newsId": "n042", "text": "Star parties are the best!", "createdAt": "2025-02-24T08:12:00Z" },
+  { "id": "c084", "newsId": "n042", "text": "Hope for clear skies next month.", "createdAt": "2025-02-24T08:32:00Z" },
+
+  { "id": "c085", "newsId": "n043", "text": "Contrails are just ice crystals.", "createdAt": "2025-02-24T16:18:00Z" },
+  { "id": "c086", "newsId": "n043", "text": "Chemtrails myth again.", "createdAt": "2025-02-24T16:40:00Z" },
+
+  { "id": "c087", "newsId": "n044", "text": "Pedestrian Sundays will be lively.", "createdAt": "2025-02-25T09:05:00Z" },
+  { "id": "c088", "newsId": "n044", "text": "Please include bus detours info.", "createdAt": "2025-02-25T09:25:00Z" },
+
+  { "id": "c089", "newsId": "n045", "text": "5G bracelets are scams.", "createdAt": "2025-02-25T13:40:00Z" },
+  { "id": "c090", "newsId": "n045", "text": "Engineers have spoken.", "createdAt": "2025-02-25T13:58:00Z" },
+
+  { "id": "c091", "newsId": "n046", "text": "Love the homework help line.", "createdAt": "2025-02-26T10:25:00Z" },
+  { "id": "c092", "newsId": "n046", "text": "Add STEM librarians to shifts.", "createdAt": "2025-02-26T10:48:00Z" },
+
+  { "id": "c093", "newsId": "n047", "text": "Solar still works in winter.", "createdAt": "2025-02-26T19:05:00Z" },
+  { "id": "c094", "newsId": "n047", "text": "Output may drop but it's not zero.", "createdAt": "2025-02-26T19:28:00Z" },
+
+  { "id": "c095", "newsId": "n048", "text": "Open data FTW.", "createdAt": "2025-02-27T08:10:00Z" },
+  { "id": "c096", "newsId": "n048", "text": "Add pothole severity tags.", "createdAt": "2025-02-27T08:36:00Z" },
+
+  { "id": "c097", "newsId": "n049", "text": "That 'fuel' video is impossible.", "createdAt": "2025-02-27T14:40:00Z" },
+  { "id": "c098", "newsId": "n049", "text": "Thermodynamics disagrees.", "createdAt": "2025-02-27T14:58:00Z" },
+
+  { "id": "c099", "newsId": "n050", "text": "Bike racks on ferries are great!", "createdAt": "2025-02-28T09:30:00Z" },
+  { "id": "c100", "newsId": "n050", "text": "Weekend service helps families.", "createdAt": "2025-02-28T09:55:00Z" }
+]
+
+
