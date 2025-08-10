@@ -1,10 +1,10 @@
 ## Todo List – Social Anti‑Fake News System
 
 ### Setup
-- [ ] Init Vite Vue app: `npm create vite@latest afn -- --template vue`
-- [ ] Add Tailwind CSS (postcss, autoprefixer) and configure `tailwind.config.cjs`
-- [ ] Add Vue Router and Pinia
-- [ ] Create base folders: `src/components`, `src/pages`, `src/stores`, `src/mock`
+- [x] Init Vite Vue app: `npm create vite@latest afn -- --template vue`
+- [x] Add Tailwind CSS (postcss, autoprefixer) and configure `tailwind.config.cjs`
+- [x] Add Vue Router and Pinia
+- [x] Create base folders: `src/components`, `src/pages`, `src/stores`, `src/mock`
 
 ### Mock Data
 - [ ] Create `src/mock/news.json` (≥ 50 items)
