@@ -22,11 +22,11 @@
 - [x] Guard invalid `:id` → redirect to home
 
 ### Home Page (`/`)
-- [ ] `NewsFilter` (all/fake/non‑fake)
-- [ ] `PageSizeSelect` (5/10/20)
-- [ ] `NewsCard` shows: title, summary, status, reporter, reportedAt
-- [ ] `Pagination` controls (prev/next, current page)
-- [ ] Loading/skeleton while seeds hydrate
+- [x] `NewsFilter` (all/fake/non‑fake)
+- [x] `PageSizeSelect` (5/10/20)
+- [x] `NewsCard` shows: title, summary, status, reporter, reportedAt
+- [x] `Pagination` controls (prev/next, current page)
+- [x] Loading/skeleton while seeds hydrate
 - [ ] Responsive layout tests
 
 ### Details Page (`/news/:id`)
