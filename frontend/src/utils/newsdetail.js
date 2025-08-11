@@ -1,6 +1,8 @@
-// Utility to load newsdetail.json in the browser
+// Load details from bundled JSON to work in both dev and production builds
+import newsDetailSeed from '../mock/newsdetail.json'
+
 export async function fetchNewsDetailById(newsId) {
-  const res = await fetch('/src/mock/newsdetail.json')
-  const all = await res.json()
-  return all.find(n => n.newsId === newsId)
+  // Keep async signature for compatibility
+  const detail = newsDetailSeed.find((n) => n.newsId === newsId) || null
+  return detail
 }
