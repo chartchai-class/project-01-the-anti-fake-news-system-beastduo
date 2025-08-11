@@ -33,11 +33,25 @@ function onChangePageSize(event) {
 }
 
 function goPrev() {
-  if (newsStore.listPage > 1) newsStore.setPage(newsStore.listPage - 1)
+  if (newsStore.listPage > 1) {
+    isLoading.value = true
+    newsStore.setPage(newsStore.listPage - 1)
+    setTimeout(() => {
+      isLoading.value = false
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 500)
+  }
 }
 
 function goNext() {
-  if (newsStore.listPage < totalPages.value) newsStore.setPage(newsStore.listPage + 1)
+  if (newsStore.listPage < totalPages.value) {
+    isLoading.value = true
+    newsStore.setPage(newsStore.listPage + 1)
+    setTimeout(() => {
+      isLoading.value = false
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 500)
+  }
 }
 
 function formatDate(iso) {
@@ -107,16 +121,16 @@ function truncate(text, max = 140) {
         </span>
       </div>
 
-      <!-- Skeleton Loading State -->
-      <ul v-if="isLoading" class="grid gap-5 sm:grid-cols-2">
-        <li v-for="i in newsStore.listPageSize" :key="i" class="animate-pulse rounded-xl border border-[#002b5c]/20 bg-white p-5 shadow-lg">
-          <div class="mb-3 h-5 w-2/3 rounded bg-[#002b5c]/20"></div>
-          <div class="mb-2 h-4 w-1/2 rounded bg-[#e10600]/20"></div>
-          <div class="mb-4 h-4 w-full rounded bg-gray-200"></div>
-          <div class="mb-2 h-3 w-1/3 rounded bg-gray-100"></div>
-          <div class="h-8 w-24 rounded bg-[#002b5c]/10"></div>
-        </li>
-      </ul>
+      <!-- Centered Loading Spinner for Pagination -->
+      <div v-if="isLoading" class="fixed inset-0 z-50 flex items-center justify-center bg-black/10">
+        <div class="flex flex-col items-center gap-4">
+          <svg class="animate-spin h-12 w-12 text-[#e10600]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+          </svg>
+          <span class="text-[#e10600] font-bold text-lg">Loading...</span>
+        </div>
+      </div>
 
       <!-- No news state -->
       <div v-else-if="newsStore.pagedNews.length === 0" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
