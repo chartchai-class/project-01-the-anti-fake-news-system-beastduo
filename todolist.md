@@ -27,7 +27,7 @@
 - [x] `NewsCard` shows: title, summary, status, reporter, reportedAt
 - [x] `Pagination` controls (prev/next, current page)
 - [x] Loading/skeleton while seeds hydrate
-- [ ] Responsive layout tests
+- [x] Responsive layout tests
 
 ### Details Page (`/news/:id`)
 - [x] `NewsHeader` (title, status, reporter, reportedAt)
