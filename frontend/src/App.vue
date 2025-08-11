@@ -1,12 +1,29 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useNewsStore } from './stores/news'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 const newsStore = useNewsStore()
+const router = useRouter()
 
+// NProgress config for YouTube style
+NProgress.configure({ showSpinner: false, trickleSpeed: 200 })
+const nprogressStyle = document.createElement('style')
+nprogressStyle.innerHTML = `#nprogress .bar { background: #e10600 !important; height: 2px !important; } #nprogress .peg { box-shadow: 0 0 10px #e10600, 0 0 5px #e10600 !important; }`;
+document.head.appendChild(nprogressStyle)
+
+let unregisterStart, unregisterEnd
 onMounted(() => {
   newsStore.loadSeeds()
   newsStore.hydrateFromLocalStorage()
+  unregisterStart = router.beforeEach((to, from, next) => { NProgress.start(); next(); })
+  unregisterEnd = router.afterEach(() => { NProgress.done(); })
+})
+onUnmounted(() => {
+  if (unregisterStart) unregisterStart()
+  if (unregisterEnd) unregisterEnd()
 })
 </script>
 
