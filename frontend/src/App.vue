@@ -33,7 +33,7 @@ onUnmounted(() => {
     <header class="sticky top-0 z-30 w-full bg-[#002b5c] shadow-lg">
       <nav class="flex w-full items-center justify-between px-8 py-3">
         <div class="flex items-center gap-3">
-          <img src="/vite.svg" alt="BEAST DUO Logo" class="h-10 w-10 rounded bg-white p-1 shadow" />
+          <img src="/beastduo-logo.jpg" alt="BEAST DUO Logo" class="h-10 w-10 rounded bg-white p-1 shadow" />
           <span class="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-2">
             <router-link to="/" class="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-2 focus:outline-none focus:ring-2 focus:ring-[#e10600] rounded transition group" aria-label="Go to Home">
               <span class="text-2xl font-extrabold tracking-tight text-[#2aafc7] drop-shadow-sm leading-tight group-hover:text-[#e10600] transition">BEAST DUO</span>
