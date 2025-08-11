@@ -49,7 +49,7 @@
 - [ ] Loading environment (skeleton or spinner)
 
 ### Storage & Session
-- [ ] LocalStorage keys: `frontend.v1.votes`, `frontend.v1.comments`
+- [ ] LocalStorage keys: `afn.v1.votes`, `afn.v1.comments`
 - [ ] Merge logic on boot; clear strategy simple (no server persistence)
 
 ### QA Pass
