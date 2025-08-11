@@ -172,7 +172,7 @@ function truncate(text, max = 140) {
                 'inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold ring-2',
                 newsStore.computedStatusByNewsId(n.id)
                   ? 'bg-[#e10600]/10 text-[#e10600] ring-[#e10600]'
-                  : 'bg-[#002b5c]/10 text-[#002b5c] ring-[#002b5c]'
+                  : 'bg-[#002b5c]/10 text-[#0bac18] ring-[#038619]'
               ]"
               :aria-label="newsStore.computedStatusByNewsId(n.id) ? 'Fake' : 'Non-fake'"
             >{{ newsStore.computedStatusByNewsId(n.id) ? 'Fake' : 'Non‑fake' }}</span>
