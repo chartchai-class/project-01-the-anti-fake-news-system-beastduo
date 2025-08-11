@@ -18,8 +18,8 @@
 - [x] Vote status computation (majority or fallback to seed)
 
 ### Routing
-- [ ] Define routes: `/`, `/news/:id`, `/news/:id/vote`
-- [ ] Guard invalid `:id` → redirect to home
+- [x] Define routes: `/`, `/news/:id`, `/news/:id/vote`
+- [x] Guard invalid `:id` → redirect to home
 
 ### Home Page (`/`)
 - [ ] `NewsFilter` (all/fake/non‑fake)
@@ -49,7 +49,7 @@
 - [ ] Loading environment (skeleton or spinner)
 
 ### Storage & Session
-- [ ] LocalStorage keys: `afn.v1.votes`, `afn.v1.comments`
+- [ ] LocalStorage keys: `frontend.v1.votes`, `frontend.v1.comments`
 - [ ] Merge logic on boot; clear strategy simple (no server persistence)
 
 ### QA Pass
