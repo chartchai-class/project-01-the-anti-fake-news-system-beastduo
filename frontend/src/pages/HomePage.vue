@@ -1,9 +1,13 @@
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { useNewsStore } from '../stores/news'
+
 
 const newsStore = useNewsStore()
 const isLoading = ref(true)
+const route = useRoute()
+const router = useRouter()
 
 const totalPages = computed(() => {
   const total = newsStore.filteredNews.length
@@ -11,9 +15,29 @@ const totalPages = computed(() => {
   return Math.max(1, Math.ceil(total / perPage))
 })
 
-// Simulate loading state for skeleton (replace with real hydration if needed)
-setTimeout(() => { isLoading.value = false }, 900)
 
+// On mount, sync state from query params
+onMounted(() => {
+  const page = parseInt(route.query.page)
+  const size = parseInt(route.query.size)
+  if (!isNaN(page) && page > 0) newsStore.setPage(page)
+  if (!isNaN(size) && [5,10,20].includes(size)) newsStore.setPageSize(size)
+  setTimeout(() => { isLoading.value = false }, 900)
+})
+
+
+// Watch for page/size/filter changes and update URL
+watch(
+  () => [newsStore.listPage, newsStore.listPageSize, newsStore.listFilter],
+  ([page, size, filter]) => {
+    const query = { ...route.query, page, size }
+    // Optionally add filter to query if you want
+    // query.filter = filter
+    router.replace({ query })
+  }
+)
+
+// Keep page in bounds
 watch(
   () => [newsStore.listPage, totalPages.value],
   () => {
