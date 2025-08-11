@@ -12,10 +12,10 @@
  - [x] Create `src/mock/votes.json` (fake & non‑fake spread)
 
 ### State (Pinia)
-- [ ] Implement `useNewsStore` with state, getters, actions described in plan
-- [ ] `loadSeeds()` reads mock JSON; `hydrateFromLocalStorage()` merges session data
-- [ ] `persistToLocalStorage()` on vote/comment add
-- [ ] Vote status computation (majority or fallback to seed)
+- [x] Implement `useNewsStore` with state, getters, actions described in plan
+- [x] `loadSeeds()` reads mock JSON; `hydrateFromLocalStorage()` merges session data
+- [x] `persistToLocalStorage()` on vote/comment add
+- [x] Vote status computation (majority or fallback to seed)
 
 ### Routing
 - [ ] Define routes: `/`, `/news/:id`, `/news/:id/vote`
