@@ -53,10 +53,10 @@
 - [x] Merge logic on boot; clear strategy simple (no server persistence)
 
 ### QA Pass
-- [ ] Pagination functions for list and comments
-- [ ] Filters work and combine with pagination correctly
-- [ ] Vote changes reflect immediately across pages via Pinia
-- [ ] Mobile, tablet, desktop responsiveness
+- [x] Pagination functions for list and comments
+- [x] Filters work and combine with pagination correctly
+- [x] Vote changes reflect immediately across pages via Pinia
+- [x] Mobile, tablet, desktop responsiveness
 
 ### Deployment
 - [ ] Add `build` script in `package.json`
