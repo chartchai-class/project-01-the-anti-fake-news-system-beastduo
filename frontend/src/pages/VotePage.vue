@@ -8,7 +8,18 @@ const router = useRouter()
 const newsStore = useNewsStore()
 
 const newsId = computed(() => String(route.params.id || ''))
-const newsItem = computed(() => newsStore.news.find(n => n.id === newsId.value))
+const newsItem = ref(null)
+const isLoading = ref(true)
+
+import { onMounted } from 'vue'
+onMounted(() => {
+  isLoading.value = true
+  // Simulate async fetch (or use real fetch if needed)
+  setTimeout(() => {
+    newsItem.value = newsStore.news.find(n => n.id === newsId.value)
+    isLoading.value = false
+  }, 500)
+})
 
 const status = ref('')
 const comment = ref('')
@@ -67,7 +78,16 @@ async function submitVote() {
         <h1 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-extrabold text-[#002b5c] tracking-tight text-center w-full pointer-events-none">Vote</h1>
       </div>
 
-      <div v-if="!newsItem" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
+      <!-- Skeleton Loading State -->
+      <div v-if="isLoading" class="space-y-6">
+        <div class="h-8 w-2/3 rounded bg-gray-200 animate-pulse"></div>
+        <div class="h-5 w-1/3 rounded bg-gray-100 animate-pulse"></div>
+        <div class="h-32 w-full rounded bg-gray-100 animate-pulse"></div>
+        <div class="h-6 w-1/2 rounded bg-gray-200 animate-pulse"></div>
+        <div class="h-20 w-full rounded bg-gray-100 animate-pulse"></div>
+      </div>
+
+      <div v-else-if="!newsItem" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
         News not found.
       </div>
 
