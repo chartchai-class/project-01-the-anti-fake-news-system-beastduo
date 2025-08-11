@@ -30,27 +30,27 @@
 - [ ] Responsive layout tests
 
 ### Details Page (`/news/:id`)
-- [ ] `NewsHeader` (title, status, reporter, reportedAt)
-- [ ] `ImagePreview` (from imageUrl)
-- [ ] `VoteSummary` (fake vs non‑fake counts)
-- [ ] `CommentList` with pagination; empty state
-- [ ] Link/button to Vote page
+- [x] `NewsHeader` (title, status, reporter, reportedAt)
+- [x] `ImagePreview` (from imageUrl)
+- [x] `VoteSummary` (fake vs non‑fake counts)
+- [x] `CommentList` with pagination; empty state
+- [x] Link/button to Vote page
 
 ### Vote Page (`/news/:id/vote`)
-- [ ] `VoteForm` with radio (fake/non‑fake)
-- [ ] Optional comment textarea + optional image URL input
-- [ ] Client validation (URL format optional)
-- [ ] On submit, update store; show toast; navigate to details
+- [x] `VoteForm` with radio (fake/non‑fake)
+- [x] Optional comment textarea + optional image URL input
+- [x] Client validation (URL format optional)
+- [x] On submit, update store; show toast; navigate to details
 
 ### UX/Styling
-- [ ] Global layout & header
-- [ ] Status badges and color system (Tailwind)
-- [ ] Focus states and accessible labels
-- [ ] Loading environment (skeleton or spinner)
+- [x] Global layout & header
+- [x] Status badges and color system (Tailwind)
+- [x] Focus states and accessible labels
+- [x] Loading environment (skeleton or spinner)
 
 ### Storage & Session
-- [ ] LocalStorage keys: `afn.v1.votes`, `afn.v1.comments`
-- [ ] Merge logic on boot; clear strategy simple (no server persistence)
+- [x] LocalStorage keys: `afn.v1.votes`, `afn.v1.comments`
+- [x] Merge logic on boot; clear strategy simple (no server persistence)
 
 ### QA Pass
 - [ ] Pagination functions for list and comments
