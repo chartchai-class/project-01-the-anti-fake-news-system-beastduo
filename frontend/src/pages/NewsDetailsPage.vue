@@ -119,6 +119,14 @@ onMounted(async () => {
                 <span class="text-xs text-gray-400">{{ formatDate(c.createdAt) }}</span>
               </div>
               <p class="text-sm text-gray-700">{{ c.text }}</p>
+              <div v-if="c.imageUrl" class="mt-2">
+                <img
+                  :src="c.imageUrl"
+                  alt="Comment image"
+                  class="w-full h-auto rounded border"
+                  loading="lazy"
+                />
+              </div>
             </li>
           </ul>
           <!-- Pagination for comments -->
