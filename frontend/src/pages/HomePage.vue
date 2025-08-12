@@ -3,6 +3,9 @@ import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useNewsStore } from '../stores/news'
 
+// Add search term state
+const searchTerm = ref('')
+
 
 const newsStore = useNewsStore()
 const isLoading = ref(true)
@@ -13,6 +16,29 @@ const totalPages = computed(() => {
   const total = newsStore.filteredNews.length
   const perPage = newsStore.listPageSize || 1
   return Math.max(1, Math.ceil(total / perPage))
+})
+
+// Filtered news by search
+const searchedNews = computed(() => {
+  if (!searchTerm.value.trim()) return newsStore.filteredNews
+  const term = searchTerm.value.trim().toLowerCase()
+  return newsStore.filteredNews.filter(n =>
+    n.title.toLowerCase().includes(term) ||
+    n.summary.toLowerCase().includes(term)
+  )
+})
+
+// Update totalPages and pagedNews to use searchedNews
+const searchedTotalPages = computed(() => {
+  const total = searchedNews.value.length
+  const perPage = newsStore.listPageSize || 1
+  return Math.max(1, Math.ceil(total / perPage))
+})
+
+const searchedPagedNews = computed(() => {
+  const start = (newsStore.listPage - 1) * newsStore.listPageSize
+  const end = start + newsStore.listPageSize
+  return searchedNews.value.slice(start, end)
 })
 
 
@@ -38,11 +64,13 @@ watch(
 )
 
 // Keep page in bounds
+
+// Watch for page out of bounds with search
 watch(
-  () => [newsStore.listPage, totalPages.value],
+  () => [newsStore.listPage, searchedTotalPages.value],
   () => {
-    if (newsStore.listPage > totalPages.value) {
-      newsStore.setPage(totalPages.value)
+    if (newsStore.listPage > searchedTotalPages.value) {
+      newsStore.setPage(searchedTotalPages.value)
     }
   },
   { immediate: true }
@@ -126,6 +154,15 @@ function truncate(text, max = 140) {
             <option :value="20">20</option>
           </select>
         </div>
+        <div class="flex items-center w-full sm:w-auto justify-end">
+          <input
+            v-model="searchTerm"
+            type="text"
+            placeholder="Search news..."
+            class="w-full sm:w-64 rounded border border-[#002b5c] px-4 py-2 text-base focus:ring-2 focus:ring-[#e10600]"
+            aria-label="Search news"
+          />
+        </div>
         <!-- Live refresh button (bonus) -->
         <!-- <button class="rounded bg-[#e10600] px-4 py-2 text-white font-bold shadow hover:bg-[#b80000] transition">Refresh</button> -->
       </section>
@@ -139,9 +176,9 @@ function truncate(text, max = 140) {
           <strong>
             {{ (newsStore.listPage - 1) * newsStore.listPageSize + 1 }}
             -
-            {{ Math.min(newsStore.listPage * newsStore.listPageSize, newsStore.filteredNews.length) }}
+            {{ Math.min(newsStore.listPage * newsStore.listPageSize, searchedNews.length) }}
           </strong>
-          of <strong>{{ newsStore.filteredNews.length }}</strong>
+          of <strong>{{ searchedNews.length }}</strong>
         </span>
       </div>
 
@@ -157,13 +194,13 @@ function truncate(text, max = 140) {
       </div>
 
       <!-- No news state -->
-      <div v-else-if="newsStore.pagedNews.length === 0" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
+      <div v-else-if="searchedPagedNews.length === 0" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
         No news to display.
       </div>
 
       <!-- News Card List -->
       <ul v-else class="grid gap-5 sm:grid-cols-2">
-        <li v-for="n in newsStore.pagedNews" :key="n.id"
+        <li v-for="n in searchedPagedNews" :key="n.id"
             class="group relative rounded-xl border-2 border-[#002b5c]/10 bg-white p-5 shadow-lg transition-transform duration-200 hover:scale-[1.025] hover:shadow-2xl focus-within:ring-2 focus-within:ring-[#e10600]">
           <div class="flex items-start justify-between gap-3">
             <h2 class="text-lg font-extrabold leading-snug text-[#002b5c] group-hover:text-[#e10600] transition">{{ n.title }}</h2>
@@ -201,10 +238,10 @@ function truncate(text, max = 140) {
                 aria-label="Previous page">
           Prev
         </button>
-        <div class="text-base font-bold text-[#002b5c]">Page {{ newsStore.listPage }} of {{ totalPages }}</div>
+        <div class="text-base font-bold text-[#002b5c]">Page {{ newsStore.listPage }} of {{ searchedTotalPages }}</div>
         <button type="button" @click="goNext"
                 class="rounded bg-white border-2 border-[#e10600] px-4 py-2 text-base font-bold text-[#e10600] shadow hover:bg-[#e10600] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#002b5c] disabled:cursor-not-allowed disabled:opacity-50 transition"
-                :disabled="newsStore.listPage >= totalPages"
+                :disabled="newsStore.listPage >= searchedTotalPages"
                 aria-label="Next page">
           Next
         </button>
