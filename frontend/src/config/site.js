@@ -2,7 +2,7 @@
 
 const site = {
   name: 'Beast Duo Anti‑Fake News',
-  url: 'https://project-01-the-anti-fake-news-syste.vercel.app/', // Add deployed URL if available
+  url: 'https://beastduo-anti-fake-news.vercel.app/', // Add deployed URL if available
   description:
     'A responsive SPA to explore news items, vote fake/non‑fake, and discuss with optional comments and image URLs. Built with Vue 3, Vite, Tailwind, Pinia, and Vue Router.',
   repoUrl: 'https://github.com/chartchai-class/project-01-the-anti-fake-news-system-beastduo', // Add GitHub repository URL if available
