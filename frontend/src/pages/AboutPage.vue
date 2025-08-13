@@ -5,7 +5,7 @@ const appTitle = document.title || 'Social Anti‑Fake News System'
 </script>
 
 <template>
-  <main class="mx-auto max-w-5xl px-6 py-10 text-[#002b5c]">
+  <main class="mx-auto max-w-5xl px-6 py-10 text-[#002b5c] flex-grow">
     <section class="rounded-xl bg-white/90 p-6 shadow">
       <h1 class="mb-2 text-3xl font-extrabold tracking-tight">About</h1>
       <p class="mb-6 text-sm text-gray-600">{{ appTitle }}</p>

@@ -28,7 +28,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-[#002b5c] via-[#ffffff] to-[#e10600]">
+  <div class="min-h-screen flex flex-col bg-gradient-to-br from-[#002b5c] via-[#ffffff] to-[#e10600]">
     <!-- Global Header -->
     <header class="sticky top-0 z-30 w-full bg-[#002b5c] shadow-lg">
       <nav class="flex w-full items-center justify-between px-8 py-3">
@@ -47,7 +47,7 @@ onUnmounted(() => {
         </ul>
       </nav>
     </header>
-    <div>
+    <div class="flex-1 flex flex-col">
       <div v-if="!newsStore.hydrated" class="py-20 text-center text-gray-500">
         Loading data...
       </div>
