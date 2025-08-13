@@ -1,12 +1,12 @@
+
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useNewsStore } from '../stores/news'
+import NewsCard from '../components/NewsCard.vue'
+import TrustScoreBar from '../components/TrustScoreBar.vue'
 
-// Add search term state
 const searchTerm = ref('')
-
-
 const newsStore = useNewsStore()
 const isLoading = ref(true)
 const route = useRoute()
@@ -151,6 +151,7 @@ function truncate(text, max = 140) {
                   :value="newsStore.listPageSize" @change="onChangePageSize">
             <option :value="5">5</option>
             <option :value="10">10</option>
+            <option :value="15">15</option>
             <option :value="20">20</option>
           </select>
         </div>
@@ -200,34 +201,16 @@ function truncate(text, max = 140) {
 
       <!-- News Card List -->
       <ul v-else class="grid gap-5 sm:grid-cols-2">
-        <li v-for="n in searchedPagedNews" :key="n.id"
-            class="group relative rounded-xl border-2 border-[#002b5c]/10 bg-white p-5 shadow-lg transition-transform duration-200 hover:scale-[1.025] hover:shadow-2xl focus-within:ring-2 focus-within:ring-[#e10600]">
-          <div class="flex items-start justify-between gap-3">
-            <h2 class="text-lg font-extrabold leading-snug text-[#002b5c] group-hover:text-[#e10600] transition">{{ n.title }}</h2>
-            <span
-              :class="[
-                'inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold ring-2',
-                newsStore.computedStatusByNewsId(n.id)
-                  ? 'bg-[#e10600]/10 text-[#e10600] ring-[#e10600]'
-                  : 'bg-[#002b5c]/10 text-[#0bac18] ring-[#038619]'
-              ]"
-              :aria-label="newsStore.computedStatusByNewsId(n.id) ? 'Fake' : 'Non-fake'"
-            >{{ newsStore.computedStatusByNewsId(n.id) ? 'Fake' : 'Non‑fake' }}</span>
-          </div>
-          <p class="mt-2 text-sm text-gray-700">{{ truncate(n.summary, 180) }}</p>
-          <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-500">
-            <span>Reporter: <strong class="text-[#002b5c]">{{ n.reporter }}</strong></span>
-            <span>Reported: {{ formatDate(n.reportedAt) }}</span>
-          </div>
-          <div class="mt-4 flex items-center justify-between">
-            <router-link :to="{ name: 'news-details', params: { id: n.id } }"
-                         class="rounded px-3 py-1 text-sm font-bold text-white bg-[#002b5c] hover:bg-[#e10600] focus:outline-none focus:ring-2 focus:ring-[#e10600] transition"
-                         >View details</router-link>
-            <router-link :to="{ name: 'news-vote', params: { id: n.id } }"
-                         class="rounded px-3 py-1 text-sm font-bold text-white bg-[#e10600] hover:bg-[#002b5c] focus:outline-none focus:ring-2 focus:ring-[#002b5c] transition"
-                         >Vote</router-link>
-          </div>
-        </li>
+        <NewsCard
+          v-for="n in searchedPagedNews"
+          :key="n.id"
+          :news="n"
+          :isFake="newsStore.computedStatusByNewsId(n.id)"
+          :formatDate="formatDate"
+          :truncate="truncate"
+          :fakeVotes="(newsStore.votesByNewsId[n.id] || []).filter(v => v.status === 'fake' || v.isFake === true).length"
+          :notFakeVotes="(newsStore.votesByNewsId[n.id] || []).filter(v => v.status === 'nonfake' || v.isFake === false).length"
+        />
       </ul>
 
       <!-- Pagination Controls -->
