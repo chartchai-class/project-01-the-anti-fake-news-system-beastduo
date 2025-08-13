@@ -53,6 +53,24 @@ onUnmounted(() => {
       </div>
       <router-view v-else />
     </div>
-  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#002b5c] text-white py-4 mt-8 shadow-inner">
+    <div class="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm">
+      <span class="font-bold">Social Anti-Fake News System</span>
+      <span>© 2025 BeastDuo Team</span>
+      <span class="hidden sm:inline">For educational use only</span>
+    </div>
+  </footer>
+</div>
 </template>
+
+<style>
+html, body, #app {
+  height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+</style>
 
