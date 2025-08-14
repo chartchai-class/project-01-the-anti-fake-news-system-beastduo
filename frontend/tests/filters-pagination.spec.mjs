@@ -12,25 +12,23 @@ test.describe('Filters and pagination integration', () => {
     await page.goto(routes.home)
     await waitForListHydrated(page)
 
-    const pageLabel = page.locator('text=/^Page \\d+ of \\d+$/')
     const showing = page.locator('text=/^Showing /')
 
     // Start with size 5 for predictable math
     await page.getByLabel('Select page size').selectOption('5')
-    await expect(pageLabel).toContainText('Page 1 of')
+    await expect(showing).toContainText('Showing 1 - 5 of')
 
     // Go to next page (if available)
     const nextBtn = page.getByRole('button', { name: 'Next page' })
     if (await nextBtn.isEnabled()) {
       await nextBtn.click()
-      await expect(pageLabel).toContainText('Page 2 of')
-      await expect(showing).toContainText('Showing 6 -')
+      await expect(showing).toContainText('Showing 6 - 10')
     }
 
     // Apply filter: Fake
     await page.getByLabel('Filter').selectOption('fake')
     // Page should reset back to 1
-    await expect(pageLabel).toContainText('Page 1 of')
+    await expect(showing).toContainText('Showing 1 -')
 
     // Record total after filter from the "Showing" text
     const showingText = await showing.textContent()
@@ -40,7 +38,7 @@ test.describe('Filters and pagination integration', () => {
 
     // Change page size to 10; page should remain/reset to 1
     await page.getByLabel('Select page size').selectOption('10')
-    await expect(pageLabel).toContainText('Page 1 of')
+    await expect(showing).toContainText('Showing 1 - 10')
   })
 })
 
