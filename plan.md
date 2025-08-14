@@ -138,6 +138,54 @@
 - Tailwind used project‑wide; basic loading/skeleton provided.
 - Deployed to Vercel; README includes team, video, and deployed URL.
 
+### Maximum‑Score Checklist (mapped to `Project Description.txt`)
+- [ ] Mock data
+  - [ ] `frontend/src/mock/news.json` has ≥ 50 items with: `id`, `title`, `summary`, `content`, `isFake` (or status), `reporterName`, `reportedAt` (ISO), `imageUrl`.
+  - [ ] `frontend/src/mock/comments.json` has enough items (10–20 per several news) to exercise pagination.
+  - [ ] `frontend/src/mock/votes.json` has a mix that yields both fake and non‑fake statuses.
+  - [ ] Home and comments pagination verified using the dataset.
+- [ ] Layout & responsiveness
+  - [ ] Design is consistent and not identical to the class Event app.
+  - [ ] Fully responsive (mobile/tablet/desktop) with Tailwind utilities; no overflow; tap targets and text sizes are readable.
+  - [ ] Accessible focus states and alt text for images.
+- [ ] List of news + pagination
+  - [ ] Home shows topic, short detail, status (fake/non‑fake), reporter, date/time, and a clear link to details.
+  - [ ] Items‑per‑page selector (e.g., 5/10/20) works.
+  - [ ] Pagination controls include prev/next and a way to jump to pages.
+  - [ ] Pagination/filter state is preserved when navigating to details and back.
+- [ ] Filter Fake vs Non‑Fake
+  - [ ] Filter UI includes All/Fake/Non‑Fake.
+  - [ ] Filter works together with pagination and page size.
+  - [ ] Loading/empty states are shown appropriately.
+- [ ] Details page + sub‑routing
+  - [ ] `/news/:id` shows title, full detail, status, reporter, date/time, and image from URL.
+  - [ ] Subroutes or sections/tabs for Comments (paginated), Vote summary/results, and a link/button to the Vote page.
+  - [ ] Smooth navigation among details sub‑sections and back to list.
+- [ ] Comments and votes listing
+  - [ ] Lists combine seed data with session updates.
+  - [ ] Comments have independent pagination (with page size if provided).
+  - [ ] Shared state via Pinia keeps data consistent across subroutes without refetching.
+- [ ] Voting
+  - [ ] Vote form supports Fake/Not‑Fake, optional comment, and optional image URL.
+  - [ ] On submit, Pinia updates; vote counts/percentages update reactively across the app.
+  - [ ] Session persistence via `localStorage`; acceptable if additions disappear on full reload per brief.
+  - [ ] Success feedback and redirect to details (or clear confirmation).
+- [ ] Tailwind CSS usage
+  - [ ] Tailwind used across all pages/components (not partially).
+  - [ ] Consistent spacing, color, and typography scales; responsive classes applied.
+  - [ ] Basic loading/skeleton UI provided.
+- [ ] Deployment
+  - [ ] Local build (`npm run build`) succeeds; output is `dist`.
+  - [ ] Deployed to Vercel with SPA fallback routing working.
+  - [ ] All routes (home, details, subroutes, vote) work on deployed URL.
+- [ ] Deliverables & submission
+  - [ ] `README.md` includes group name, member names and student IDs, deployed site URL, and 2–3 minute demo video URL.
+  - [ ] Instructor invited to repo; classroom linkage completed.
+  - [ ] Submit repository and deployed URL before deadline.
+
+### Quick verification flow
+- [ ] Home → change items/page → paginate → filter → open details → view image and sub‑sections → open comments/votes (pagination) → go to vote → submit with comment/image URL → confirm reactive updates everywhere → navigate back preserving state → test on mobile and desktop → reload to confirm ephemeral behavior → test on deployed site.
+
 ### Execution Timeline (suggested)
 1) Scaffold & tooling (Vite, Tailwind, Router, Pinia) – 0.5 day
 2) Data models & Pinia store with seeds and `localStorage` – 0.5 day

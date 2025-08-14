@@ -19,7 +19,7 @@
       </div>
       <p class="mt-2 text-sm text-gray-700 cursor-pointer">{{ truncate(news.summary, 180) }}</p>
       <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-500">
-        <span>Reporter: <strong class="text-[#002b5c] cursor-pointer">{{ news.reporter }}</strong></span>
+        <span>Reporter: <strong class="text-[#002b5c] cursor-pointer">{{ news.reporterName }}</strong></span>
         <span>Reported: {{ formatDate(news.reportedAt) }}</span>
       </div>
     </router-link>

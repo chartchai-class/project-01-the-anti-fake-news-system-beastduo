@@ -97,7 +97,7 @@ function goPrev() {
 }
 
 function goNext() {
-  if (newsStore.listPage < totalPages.value) {
+  if (newsStore.listPage < searchedTotalPages.value) {
     isLoading.value = true
     newsStore.setPage(newsStore.listPage + 1)
     setTimeout(() => {

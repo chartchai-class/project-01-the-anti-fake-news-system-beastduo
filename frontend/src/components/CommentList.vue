@@ -7,7 +7,7 @@
     <ul v-else class="space-y-4" data-testid="comments-list">
       <li v-for="c in pagedComments" :key="c.id" class="rounded border bg-gray-50 p-3 shadow-sm">
         <div class="flex items-center gap-2 mb-1">
-          <span class="text-xs font-bold text-[#002b5c]">{{ c.author }}</span>
+          <span class="text-xs font-bold text-[#002b5c]">{{ c.author || 'Anonymous' }}</span>
           <span class="text-xs text-gray-400">{{ formatDate(c.createdAt) }}</span>
         </div>
         <p class="text-sm text-gray-700">{{ c.text }}</p>
