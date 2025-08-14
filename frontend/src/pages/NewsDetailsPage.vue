@@ -41,6 +41,7 @@ function formatDate(iso) {
 }
 
 onMounted(async () => {
+  window.scrollTo({ top: 0, behavior: 'auto' })
   isLoading.value = true
   newsDetail.value = await fetchNewsDetailById(newsId.value)
   setTimeout(() => { isLoading.value = false }, 500)

@@ -13,6 +13,7 @@ const isLoading = ref(true)
 
 import { onMounted } from 'vue'
 onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'auto' })
   isLoading.value = true
   // Simulate async fetch (or use real fetch if needed)
   setTimeout(() => {
