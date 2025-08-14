@@ -5,6 +5,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { useNewsStore } from '../stores/news'
 import NewsCard from '../components/NewsCard.vue'
 import TrustScoreBar from '../components/TrustScoreBar.vue'
+import { computed as vueComputed } from 'vue'
 
 const searchTerm = ref('')
 const newsStore = useNewsStore()
@@ -121,6 +122,44 @@ function truncate(text, max = 140) {
   if (!text) return ''
   return text.length > max ? text.slice(0, max - 1) + '…' : text
 }
+
+// Google-style pagination logic
+const paginationPages = vueComputed(() => {
+  const total = searchedTotalPages.value
+  const current = newsStore.listPage
+  const delta = 2 // how many pages to show before/after current
+  const range = []
+  const rangeWithDots = []
+  let l
+  for (let i = 1; i <= total; i++) {
+    if (i === 1 || i === total || (i >= current - delta && i <= current + delta)) {
+      range.push(i)
+    }
+  }
+  for (let i of range) {
+    if (l) {
+      if (i - l === 2) {
+        rangeWithDots.push(l + 1)
+      } else if (i - l > 2) {
+        rangeWithDots.push('...')
+      }
+    }
+    rangeWithDots.push(i)
+    l = i
+  }
+  return rangeWithDots
+})
+
+function goToPage(page) {
+  if (typeof page === 'number' && page !== newsStore.listPage) {
+    isLoading.value = true
+    newsStore.setPage(page)
+    setTimeout(() => {
+      isLoading.value = false
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 500)
+  }
+}
 </script>
 
 <template>
@@ -214,14 +253,34 @@ function truncate(text, max = 140) {
       </ul>
 
       <!-- Pagination Controls -->
-      <nav class="mt-8 flex items-center justify-between gap-4">
+      <nav class="mt-8 flex items-center justify-center gap-4">
         <button type="button" @click="goPrev"
                 class="rounded bg-white border-2 border-[#002b5c] px-4 py-2 text-base font-bold text-[#002b5c] shadow hover:bg-[#002b5c] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#e10600] disabled:cursor-not-allowed disabled:opacity-50 transition"
                 :disabled="newsStore.listPage <= 1"
                 aria-label="Previous page">
           Prev
         </button>
-        <div class="text-base font-bold text-[#002b5c]">Page {{ newsStore.listPage }} of {{ searchedTotalPages }}</div>
+        <ul class="flex items-center gap-1">
+          <li v-for="page in paginationPages" :key="page">
+            <button
+              v-if="page !== '...'"
+              type="button"
+              @click="goToPage(page)"
+              :class="[
+                'w-9 h-9 rounded font-bold transition',
+                page === newsStore.listPage
+                  ? 'bg-[#e10600] text-white border-2 border-[#e10600] shadow'
+                  : 'bg-white text-[#002b5c] border-2 border-[#002b5c] hover:bg-[#002b5c] hover:text-white',
+                'focus:outline-none focus:ring-2 focus:ring-[#e10600]'
+              ]"
+              :disabled="page === newsStore.listPage"
+              :aria-current="page === newsStore.listPage ? 'page' : undefined"
+            >
+              {{ page }}
+            </button>
+            <span v-else class="px-2 text-[#a1b2b9]">…</span>
+          </li>
+        </ul>
         <button type="button" @click="goNext"
                 class="rounded bg-white border-2 border-[#e10600] px-4 py-2 text-base font-bold text-[#e10600] shadow hover:bg-[#e10600] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#002b5c] disabled:cursor-not-allowed disabled:opacity-50 transition"
                 :disabled="newsStore.listPage >= searchedTotalPages"
@@ -229,6 +288,7 @@ function truncate(text, max = 140) {
           Next
         </button>
       </nav>
+
     </main>
     <!-- Animated transitions, sticky controls, and other bonus features can be added as marked above. -->
   </div>
