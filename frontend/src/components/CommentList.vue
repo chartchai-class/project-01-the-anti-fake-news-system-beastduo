@@ -8,6 +8,15 @@
       <li v-for="c in pagedComments" :key="c.id" class="rounded border bg-gray-50 p-3 shadow-sm">
         <div class="flex items-center gap-2 mb-1">
           <span class="text-xs font-bold text-[#002b5c]">{{ c.author || 'Anonymous' }}</span>
+          <span v-if="c.isFake === true || c.isFake === false"
+            :class="[
+              'inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold ring-2 ml-1',
+              c.isFake === true
+                ? 'bg-[#e10600]/10 text-[#e10600] ring-[#e10600]'
+                : 'bg-[#002b5c]/10 text-[#038619] ring-[#038619]'
+            ]"
+            :aria-label="c.isFake === true ? 'Fake' : 'Non-fake'"
+          >{{ c.isFake === true ? 'Fake' : 'Non‑fake' }}</span>
           <span class="text-xs text-gray-400">{{ formatDate(c.createdAt) }}</span>
         </div>
         <p class="text-sm text-gray-700">{{ c.text }}</p>
