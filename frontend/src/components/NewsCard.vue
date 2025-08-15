@@ -23,12 +23,12 @@
         <span>Reported: {{ formatDate(news.reportedAt) }}</span>
       </div>
     </router-link>
-    <div class="mt-4 flex items-center justify-between">
+    <div class="mt-4 flex items-center gap-3">
       <router-link :to="{ name: 'news-details', params: { id: news.id } }"
-                   class="rounded px-3 py-1 text-sm font-bold text-white bg-[#002b5c] hover:bg-[#e10600] focus:outline-none focus:ring-2 focus:ring-[#e10600] transition"
+                   class="rounded px-3 py-1 text-sm font-bold text-white bg-[#002b5c] hover:bg-[#0056b3] focus:outline-none focus:ring-2 focus:ring-[#e10600] transition"
                    >View details</router-link>
       <router-link :to="{ name: 'news-vote', params: { id: news.id } }"
-                   class="rounded px-3 py-1 text-sm font-bold text-white bg-[#e10600] hover:bg-[#002b5c] focus:outline-none focus:ring-2 focus:ring-[#002b5c] transition"
+                   class="rounded px-3 py-1 text-sm font-bold text-white bg-[#e10600] hover:bg-[#ff7f0e] focus:outline-none focus:ring-2 focus:ring-[#002b5c] transition"
                    >Vote</router-link>
     </div>
   </li>
