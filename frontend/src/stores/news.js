@@ -1,3 +1,21 @@
+// Helper to infer isFake for comments missing it, using votes
+function inferIsFakeForComments(comments, votes) {
+  if (!Array.isArray(comments) || !Array.isArray(votes)) return comments
+  return comments.map(comment => {
+    if (typeof comment.isFake === 'boolean') return comment
+    // Try to find a vote with close createdAt (within 2 seconds)
+    const commentTime = new Date(comment.createdAt).getTime()
+    const match = votes.find(v => {
+      if (!v.createdAt) return false
+      const voteTime = new Date(v.createdAt).getTime()
+      return Math.abs(voteTime - commentTime) < 2000
+    })
+    if (match && typeof match.isFake === 'boolean') {
+      return { ...comment, isFake: match.isFake }
+    }
+    return comment
+  })
+}
 import { defineStore } from 'pinia'
 
 import newsSeed from '../mock/news.json'
@@ -167,10 +185,13 @@ export const useNewsStore = defineStore('news', {
 
     getCommentsPage(newsId, page) {
       const list = this.commentsByNewsId[newsId] || []
+      const votes = this.votesByNewsId[newsId] || []
+      // Patch comments missing isFake using votes
+      const patched = inferIsFakeForComments(list, votes)
       const currentPage = page ?? this.detailCommentsPageByNews[newsId] ?? 1
       const start = (currentPage - 1) * this.detailCommentsPageSize
       const end = start + this.detailCommentsPageSize
-      return list.slice(start, end)
+      return patched.slice(start, end)
     },
 
     addVoteAndOptionalComment({ newsId, isFake, text, imageUrl }) {
@@ -184,18 +205,19 @@ export const useNewsStore = defineStore('news', {
       if (!this.votesByNewsId[newsId]) this.votesByNewsId[newsId] = []
       this.votesByNewsId[newsId].push(newVote)
 
-      const newComments = []
-      if (text && text.trim().length > 0) {
-        const newComment = {
-          id: generateId('c'),
-          newsId,
-          text: text.trim(),
-          imageUrl: imageUrl && imageUrl.trim() ? imageUrl.trim() : undefined,
-          createdAt: new Date().toISOString(),
-        }
-        if (!this.commentsByNewsId[newsId]) this.commentsByNewsId[newsId] = []
-        this.commentsByNewsId[newsId].push(newComment)
-        newComments.push(newComment)
+        const newComments = []
+        if (text && text.trim().length > 0) {
+          const newComment = {
+            id: generateId('c'),
+            newsId,
+            text: text.trim(),
+            imageUrl: imageUrl && imageUrl.trim() ? imageUrl.trim() : undefined,
+            createdAt: new Date().toISOString(),
+            isFake: !!isFake,
+          }
+          if (!this.commentsByNewsId[newsId]) this.commentsByNewsId[newsId] = []
+          this.commentsByNewsId[newsId].push(newComment)
+          newComments.push(newComment)
       }
 
       // Persist only newly created items
