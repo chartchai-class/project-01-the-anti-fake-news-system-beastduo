@@ -15,7 +15,7 @@ test.describe('Comments pagination on details page', () => {
 
     // Seed at least 6 comments through the Vote flow so pagination is guaranteed (page size = 5)
     for (let i = 0; i < 6; i++) {
-      await page.getByRole('button', { name: 'Vote on this news' }).click()
+      await page.getByRole('link', { name: 'Vote' }).click()
       await page.getByRole('radio', { name: 'Fake', exact: true }).check()
       await page.fill('#comment', `E2E seeded comment ${i}`)
       await page.getByRole('button', { name: 'Submit Vote' }).click()

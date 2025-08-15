@@ -18,7 +18,7 @@ test.describe('Vote reactivity across pages', () => {
     const beforeStatus = await statusBadge.textContent()
 
     // Go to vote page, submit a vote to flip state to Fake
-    await page.getByRole('button', { name: 'Vote on this news' }).click()
+    await page.getByRole('link', { name: 'Vote' }).click()
     await page.getByRole('radio', { name: 'Fake', exact: true }).check()
     await page.getByRole('button', { name: 'Submit Vote' }).click()
 
