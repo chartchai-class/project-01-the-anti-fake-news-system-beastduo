@@ -74,9 +74,24 @@ async function submitVote() {
 <template>
   <main class="min-h-screen bg-gradient-to-br from-[#002b5c] via-[#ffffff] to-[#e10600] pb-12">
     <div class="mx-auto max-w-md px-4 py-8">
-      <div class="relative flex items-center mb-6">
-        <button class="text-sm text-gray-200 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-100 rounded z-10" @click="goToDetails">← Back to details</button>
-        <h1 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-extrabold text-[#002b5c] tracking-tight text-center w-full pointer-events-none">Vote</h1>
+      <div class="relative flex flex-col items-center mb-6 gap-2">
+        <h1 class="text-2xl font-extrabold text-[#002b5c] tracking-tight text-center mb-1">Vote</h1>
+        <nav class="flex justify-center gap-8 py-4">
+          <RouterLink
+            v-if="!isLoading && newsItem"
+            class="px-4 py-2 rounded font-bold text-blue-700 bg-blue-100 hover:bg-blue-200 hover:text-green-600 transition-colors shadow"
+            :to="{ name: 'news-details', params: { id: newsItem.id } }"
+            exact-active-class="ring-2 ring-blue-400"
+          >Details</RouterLink>
+          <span v-else class="px-4 py-2 rounded font-bold text-blue-300 bg-blue-50 transition-colors shadow cursor-not-allowed opacity-60">Details</span>
+          <RouterLink
+            v-if="!isLoading && newsItem"
+            class="px-4 py-2 rounded font-bold text-green-700 bg-green-100 hover:bg-green-200 hover:text-blue-600 transition-colors shadow"
+            :to="{ name: 'news-vote', params: { id: newsItem.id } }"
+            exact-active-class="ring-2 ring-green-400"
+          >Vote</RouterLink>
+          <span v-else class="px-4 py-2 rounded font-bold text-green-300 bg-green-50 transition-colors shadow cursor-not-allowed opacity-60">Vote</span>
+        </nav>
       </div>
 
       <!-- Skeleton Loading State -->
