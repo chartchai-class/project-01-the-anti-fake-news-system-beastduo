@@ -1,0 +1,50 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - navigation:
+    - img "BEAST DUO Logo"
+    - link "Go to Home":
+      - /url: /
+      - text: BEAST DUO Anti-Fake News
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /
+      - listitem:
+        - link "About":
+          - /url: /about
+- main:
+  - text: Filter
+  - combobox "Filter news":
+    - option "All" [selected]
+    - option "Fake"
+    - option "Non‑fake"
+  - text: Page size
+  - combobox "Select page size":
+    - option "5" [selected]
+    - option "10"
+    - option "15"
+    - option "20"
+  - textbox "Search news"
+  - text: Showing
+  - strong: 1 - 5
+  - text: of
+  - strong: "50"
+  - img
+  - text: Loading...
+  - navigation:
+    - button "Previous page" [disabled]: Prev
+    - list:
+      - listitem:
+        - button "1" [disabled]
+      - listitem:
+        - button "2"
+      - listitem:
+        - button "3"
+      - listitem: …
+      - listitem:
+        - button "10"
+    - button "Next page": Next
+- contentinfo: Social Anti-Fake News System © 2025 BeastDuo Team For educational use only
+```

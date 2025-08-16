@@ -10,7 +10,7 @@ const router = useRouter()
 const newsStore = useNewsStore()
 
 const newsId = computed(() => String(route.params.id || ''))
-const isLoading = ref(true)
+// Remove local loading states since data is immediately available
 const newsDetail = ref(null)
 
 // FIX: Use object property access for votes/comments
@@ -27,7 +27,7 @@ const page = ref(1)
 const totalPages = computed(() => Math.max(1, Math.ceil(comments.value.length / pageSize.value)))
 const pagedComments = computed(() => comments.value.slice((page.value-1)*pageSize.value, page.value*pageSize.value))
 
-const isCommentLoading = ref(false)
+// Remove isCommentLoading since data is immediately available
 
 function goBack() {
   router.push({ name: 'home' })
@@ -37,11 +37,8 @@ function goVote() {
 }
 function goPage(p) {
   if (p >= 1 && p <= totalPages.value) {
-    isCommentLoading.value = true
-    setTimeout(() => {
-      page.value = p
-      isCommentLoading.value = false
-    }, 500)
+    // No loading state needed - data is immediately available
+    page.value = p
   }
 }
 function formatDate(iso) {
@@ -53,9 +50,8 @@ function formatDate(iso) {
 
 onMounted(async () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
-  isLoading.value = true
+  // No loading state needed - data is immediately available
   newsDetail.value = await fetchNewsDetailById(newsId.value)
-  setTimeout(() => { isLoading.value = false }, 500)
 })
 </script>
 
@@ -80,16 +76,12 @@ onMounted(async () => {
       </div>
 
       <!-- Skeleton Loading -->
-      <div v-if="isLoading" class="space-y-6">
+      <div v-if="!newsDetail" class="space-y-6">
         <div class="h-8 w-2/3 rounded bg-gray-200 animate-pulse"></div>
         <div class="h-5 w-1/3 rounded bg-gray-100 animate-pulse"></div>
         <div class="h-48 w-full rounded bg-gray-100 animate-pulse"></div>
         <div class="h-6 w-1/2 rounded bg-gray-200 animate-pulse"></div>
         <div class="h-20 w-full rounded bg-gray-100 animate-pulse"></div>
-      </div>
-
-      <div v-else-if="!newsDetail" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
-        News not found.
       </div>
 
       <div v-else class="rounded-xl border-2 border-[#002b5c]/10 bg-white p-6 shadow-lg">
@@ -129,10 +121,9 @@ onMounted(async () => {
           </div>
         </div>
 
-        <!-- CommentList with skeleton loading -->
+        <!-- CommentList -->
         <div class="mt-6" data-testid="comments-section">
           <CommentList
-            v-if="!isCommentLoading"
             :comments="comments"
             :pagedComments="pagedComments"
             :page="page"
@@ -140,16 +131,6 @@ onMounted(async () => {
             :goPage="goPage"
             :formatDate="formatDate"
           />
-          <ul v-else class="space-y-4" data-testid="comments-skeleton">
-            <li v-for="i in pageSize" :key="i" class="rounded border bg-gray-50 p-3 shadow-sm animate-pulse">
-              <div class="flex items-center gap-2 mb-1">
-                <span class="h-4 w-16 bg-gray-200 rounded"></span>
-                <span class="h-3 w-12 bg-gray-100 rounded"></span>
-              </div>
-              <div class="h-4 w-3/4 bg-gray-200 rounded mb-2"></div>
-              <div class="h-3 w-1/2 bg-gray-100 rounded"></div>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

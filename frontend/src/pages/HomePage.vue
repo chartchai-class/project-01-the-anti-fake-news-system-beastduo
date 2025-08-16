@@ -9,7 +9,7 @@ import { computed as vueComputed } from 'vue'
 
 const searchTerm = ref('')
 const newsStore = useNewsStore()
-const isLoading = ref(true)
+// Remove local isLoading since data is immediately available
 const route = useRoute()
 const router = useRouter()
 
@@ -49,7 +49,7 @@ onMounted(() => {
   const size = parseInt(route.query.size)
   if (!isNaN(page) && page > 0) newsStore.setPage(page)
   if (!isNaN(size) && [5,10,20].includes(size)) newsStore.setPageSize(size)
-  setTimeout(() => { isLoading.value = false }, 900)
+  // No loading state needed - data is already available
 })
 
 
@@ -87,23 +87,15 @@ function onChangePageSize(event) {
 
 function goPrev() {
   if (newsStore.listPage > 1) {
-    isLoading.value = true
     newsStore.setPage(newsStore.listPage - 1)
-    setTimeout(() => {
-      isLoading.value = false
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }, 500)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
 
 function goNext() {
   if (newsStore.listPage < searchedTotalPages.value) {
-    isLoading.value = true
     newsStore.setPage(newsStore.listPage + 1)
-    setTimeout(() => {
-      isLoading.value = false
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }, 500)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
 
@@ -152,12 +144,8 @@ const paginationPages = vueComputed(() => {
 
 function goToPage(page) {
   if (typeof page === 'number' && page !== newsStore.listPage) {
-    isLoading.value = true
     newsStore.setPage(page)
-    setTimeout(() => {
-      isLoading.value = false
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }, 500)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
 </script>
@@ -222,23 +210,11 @@ function goToPage(page) {
         </span>
       </div>
 
-      <!-- Centered Loading Spinner for Pagination -->
-      <div v-if="isLoading" class="fixed inset-0 z-50 flex items-center justify-center bg-black/10">
-        <div class="flex flex-col items-center gap-4">
-          <svg class="animate-spin h-12 w-12 text-[#e10600]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
-          </svg>
-          <span class="text-[#e10600] font-bold text-lg">Loading...</span>
-        </div>
-      </div>
-
-      <!-- No news state -->
-      <div v-else-if="searchedPagedNews.length === 0" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
+      <!-- News Card List or No News State -->
+      <div v-if="searchedPagedNews.length === 0" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
         No news to display.
       </div>
 
-      <!-- News Card List -->
       <ul v-else class="grid gap-5 sm:grid-cols-2">
         <NewsCard
           v-for="n in searchedPagedNews"

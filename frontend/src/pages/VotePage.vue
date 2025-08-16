@@ -9,17 +9,13 @@ const newsStore = useNewsStore()
 
 const newsId = computed(() => String(route.params.id || ''))
 const newsItem = ref(null)
-const isLoading = ref(true)
+// Remove local isLoading since data is immediately available
 
 import { onMounted } from 'vue'
 onMounted(() => {
   window.scrollTo({ top: 0, behavior: 'auto' })
-  isLoading.value = true
-  // Simulate async fetch (or use real fetch if needed)
-  setTimeout(() => {
-    newsItem.value = newsStore.news.find(n => n.id === newsId.value)
-    isLoading.value = false
-  }, 500)
+  // No loading state needed - data is immediately available
+  newsItem.value = newsStore.news.find(n => n.id === newsId.value)
 })
 
 const status = ref('')
@@ -78,14 +74,14 @@ async function submitVote() {
         <h1 class="text-2xl font-extrabold text-[#002b5c] tracking-tight text-center mb-1">Vote</h1>
         <nav class="flex justify-center gap-8 py-4">
           <RouterLink
-            v-if="!isLoading && newsItem"
+            v-if="newsItem"
             class="px-4 py-2 rounded font-bold text-blue-700 bg-blue-100 hover:bg-blue-200 hover:text-green-600 transition-colors shadow"
             :to="{ name: 'news-details', params: { id: newsItem.id } }"
             exact-active-class="ring-2 ring-blue-400"
           >Details</RouterLink>
           <span v-else class="px-4 py-2 rounded font-bold text-blue-300 bg-blue-50 transition-colors shadow cursor-not-allowed opacity-60">Details</span>
           <RouterLink
-            v-if="!isLoading && newsItem"
+            v-if="newsItem"
             class="px-4 py-2 rounded font-bold text-green-700 bg-green-100 hover:bg-green-200 hover:text-blue-600 transition-colors shadow"
             :to="{ name: 'news-vote', params: { id: newsItem.id } }"
             exact-active-class="ring-2 ring-green-400"
@@ -95,15 +91,7 @@ async function submitVote() {
       </div>
 
       <!-- Skeleton Loading State -->
-      <div v-if="isLoading" class="space-y-6">
-        <div class="h-8 w-2/3 rounded bg-gray-200 animate-pulse"></div>
-        <div class="h-5 w-1/3 rounded bg-gray-100 animate-pulse"></div>
-        <div class="h-32 w-full rounded bg-gray-100 animate-pulse"></div>
-        <div class="h-6 w-1/2 rounded bg-gray-200 animate-pulse"></div>
-        <div class="h-20 w-full rounded bg-gray-100 animate-pulse"></div>
-      </div>
-
-      <div v-else-if="!newsItem" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
+      <div v-if="!newsItem" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
         News not found.
       </div>
 

@@ -51,6 +51,7 @@ export const useNewsStore = defineStore('news', {
     detailCommentsPageByNews: {},
     detailCommentsPageSize: 5,
     hydrated: false,
+    // Remove isLoading state since we're not using it
   }),
 
   getters: {

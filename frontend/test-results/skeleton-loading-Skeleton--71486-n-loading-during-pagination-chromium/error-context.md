@@ -1,0 +1,47 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - navigation:
+    - img "BEAST DUO Logo"
+    - link "Go to Home":
+      - /url: /
+      - text: BEAST DUO Anti-Fake News
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /
+      - listitem:
+        - link "About":
+          - /url: /about
+- main:
+  - button "← Back"
+  - heading "News Details" [level=1]
+  - navigation:
+    - link "Details":
+      - /url: /news/n050
+    - link "Vote":
+      - /url: /news/n050/vote
+  - heading "Harbor Ferry Adds Bike Racks And Weekend Service" [level=2]
+  - text: "Reporter:"
+  - strong: Cameron Rossi
+  - text: "Reported: Feb 02, 2025 Fake"
+  - img "News image"
+  - text: "The harbor ferry operator added bike racks and expanded weekend service to accommodate growing demand for multimodal commutes. Officials hope the changes will encourage more residents to use sustainable transportation options. Fake: 8 Non-fake: 1"
+  - heading "Comments" [level=3]
+  - list:
+    - listitem:
+      - text: Anonymous Fake Aug 16, 2025
+      - paragraph: Test comment 3
+    - listitem:
+      - text: Anonymous Fake Aug 16, 2025
+      - paragraph: Test comment 4
+    - listitem:
+      - text: Anonymous Fake Aug 16, 2025
+      - paragraph: Test comment 5
+  - navigation:
+    - button "Prev comments page": Prev
+    - text: Page 2 of 2
+    - button "Next comments page" [disabled]: Next
+- contentinfo: Social Anti-Fake News System © 2025 BeastDuo Team For educational use only
+```
