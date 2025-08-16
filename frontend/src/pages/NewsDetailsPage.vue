@@ -17,8 +17,9 @@ const newsDetail = ref(null)
 const comments = computed(() => newsStore.commentsByNewsId[newsId.value] || [])
 const votes = computed(() => newsStore.votesByNewsId[newsId.value] || [])
 
-const fakeCount = computed(() => votes.value.filter(v => v.status === 'fake' || v.isFake === true).length)
-const nonFakeCount = computed(() => votes.value.filter(v => v.status === 'nonfake' || v.isFake === false).length)
+const voteCounts = computed(() => newsStore.voteCountsByNewsId(newsId.value))
+const fakeCount = computed(() => voteCounts.value.fakeCount)
+const nonFakeCount = computed(() => voteCounts.value.nonFakeCount)
 
 
 const pageSize = ref(5)

@@ -247,8 +247,8 @@ function goToPage(page) {
           :isFake="newsStore.computedStatusByNewsId(n.id)"
           :formatDate="formatDate"
           :truncate="truncate"
-          :fakeVotes="(newsStore.votesByNewsId[n.id] || []).filter(v => v.status === 'fake' || v.isFake === true).length"
-          :notFakeVotes="(newsStore.votesByNewsId[n.id] || []).filter(v => v.status === 'nonfake' || v.isFake === false).length"
+          :fakeVotes="newsStore.voteCountsByNewsId(n.id).fakeCount"
+          :notFakeVotes="newsStore.voteCountsByNewsId(n.id).nonFakeCount"
         />
       </ul>
 
