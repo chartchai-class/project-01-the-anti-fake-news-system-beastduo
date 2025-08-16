@@ -25,6 +25,7 @@
         </div>
       </li>
     </ul>
+    
     <nav v-if="totalPages > 1" class="mt-4 flex items-center justify-center gap-2" data-testid="comments-pager">
       <button @click="goPage(page-1)" :disabled="page <= 1" aria-label="Prev comments page" class="rounded px-2 py-1 text-sm font-bold border border-[#002b5c] text-[#002b5c] bg-white disabled:opacity-50">Prev</button>
       <span class="text-sm font-bold text-[#002b5c]" data-testid="comments-page-label">Page {{ page }} of {{ totalPages }}</span>

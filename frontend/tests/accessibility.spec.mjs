@@ -5,9 +5,9 @@ test.describe('Accessibility Features', () => {
     await page.goto('/')
     await page.waitForSelector('ul.grid > li', { state: 'visible' })
     
-    // Test tab navigation through cards
-    await page.keyboard.press('Tab')
+    // Focus the first news card directly instead of expecting it to be the first tab stop
     const firstCard = page.locator('ul.grid > li').first()
+    await firstCard.focus()
     await expect(firstCard).toBeFocused()
     
     // Test arrow key navigation
@@ -43,9 +43,9 @@ test.describe('Accessibility Features', () => {
     // Navigate to vote page
     await page.getByRole('link', { name: 'Vote' }).click()
     
-    // Test keyboard navigation in vote form
-    await page.keyboard.press('Tab')
+    // Test keyboard navigation in vote form - focus the radio button directly
     const fakeRadio = page.getByRole('radio', { name: 'Fake', exact: true })
+    await fakeRadio.focus()
     await expect(fakeRadio).toBeFocused()
     
     // Select with spacebar

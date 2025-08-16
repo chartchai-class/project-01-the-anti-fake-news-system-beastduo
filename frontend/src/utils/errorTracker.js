@@ -2,6 +2,7 @@ class ErrorTracker {
   constructor() {
     this.errors = []
     this.maxErrors = 100
+    this.performanceMetrics = {}
   }
 
   trackError(error, context = {}) {
@@ -27,6 +28,45 @@ class ErrorTracker {
     // Log to console in development
     if (process.env.NODE_ENV === 'development') {
       console.error('[ErrorTracker]', errorInfo)
+    }
+  }
+
+  // Performance monitoring methods
+  startPerformanceTimer(name) {
+    if (!this.performanceMetrics[name]) {
+      this.performanceMetrics[name] = {
+        startTime: performance.now(),
+        loadTime: 0,
+        domContentLoaded: 0
+      }
+    }
+  }
+
+  endPerformanceTimer(name) {
+    if (this.performanceMetrics[name]) {
+      const endTime = performance.now()
+      this.performanceMetrics[name].loadTime = endTime - this.performanceMetrics[name].startTime
+      
+      // Get DOM content loaded time
+      if (document.readyState === 'complete') {
+        this.performanceMetrics[name].domContentLoaded = performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart
+      }
+    }
+  }
+
+  getPerformanceMetrics(name) {
+    return this.performanceMetrics[name] || { loadTime: 0, domContentLoaded: 0 }
+  }
+
+  trackPageLoad() {
+    this.startPerformanceTimer('pageLoad')
+    
+    if (document.readyState === 'complete') {
+      this.endPerformanceTimer('pageLoad')
+    } else {
+      window.addEventListener('load', () => {
+        this.endPerformanceTimer('pageLoad')
+      })
     }
   }
 
@@ -67,5 +107,8 @@ window.addEventListener('unhandledrejection', (event) => {
     type: 'unhandledrejection'
   })
 })
+
+// Start performance tracking on page load
+errorTracker.trackPageLoad()
 
 export default errorTracker

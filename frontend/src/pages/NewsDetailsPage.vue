@@ -10,7 +10,6 @@ const router = useRouter()
 const newsStore = useNewsStore()
 
 const newsId = computed(() => String(route.params.id || ''))
-// Remove local loading states since data is immediately available
 const newsDetail = ref(null)
 
 // FIX: Use object property access for votes/comments
@@ -27,8 +26,6 @@ const page = ref(1)
 const totalPages = computed(() => Math.max(1, Math.ceil(comments.value.length / pageSize.value)))
 const pagedComments = computed(() => comments.value.slice((page.value-1)*pageSize.value, page.value*pageSize.value))
 
-// Remove isCommentLoading since data is immediately available
-
 function goBack() {
   router.push({ name: 'home' })
 }
@@ -37,7 +34,6 @@ function goVote() {
 }
 function goPage(p) {
   if (p >= 1 && p <= totalPages.value) {
-    // No loading state needed - data is immediately available
     page.value = p
   }
 }
@@ -50,7 +46,7 @@ function formatDate(iso) {
 
 onMounted(async () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
-  // No loading state needed - data is immediately available
+  // Data loads immediately now
   newsDetail.value = await fetchNewsDetailById(newsId.value)
 })
 </script>
@@ -75,13 +71,9 @@ onMounted(async () => {
         </nav>
       </div>
 
-      <!-- Skeleton Loading -->
-      <div v-if="!newsDetail" class="space-y-6">
-        <div class="h-8 w-2/3 rounded bg-gray-200 animate-pulse"></div>
-        <div class="h-5 w-1/3 rounded bg-gray-100 animate-pulse"></div>
-        <div class="h-48 w-full rounded bg-gray-100 animate-pulse"></div>
-        <div class="h-6 w-1/2 rounded bg-gray-200 animate-pulse"></div>
-        <div class="h-20 w-full rounded bg-gray-100 animate-pulse"></div>
+      <!-- Loading State - Data loads immediately now -->
+      <div v-if="!newsDetail" class="rounded border-2 border-dashed border-[#e10600] p-8 text-center text-[#e10600] bg-white/80">
+        News not found.
       </div>
 
       <div v-else class="rounded-xl border-2 border-[#002b5c]/10 bg-white p-6 shadow-lg">
