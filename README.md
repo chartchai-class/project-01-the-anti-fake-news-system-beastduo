@@ -86,9 +86,9 @@ src/
   - 662115013 - Titpon Tawong (701)
 
 ## Links
-- Deployed site: <Vercel URL>
-- Demo video (2–3 minutes): <Video URL>
-- GitHub repository: <Repo URL>
+- Deployed site: https://beastduo-anti-fake-news.vercel.app/
+- Demo video (2–3 minutes): https://youtu.be/a5hyexIkq0w?si=hwvcAwWjU5XGNu9c
+- GitHub repository: https://github.com/chartchai-class/project-01-the-anti-fake-news-system-beastduo
 
 ## Notes
 - This project intentionally avoids server POST operations and persists user additions only within the browser session, as specified in the assignment.
