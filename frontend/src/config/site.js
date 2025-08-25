@@ -6,7 +6,7 @@ const site = {
   description:
     'A responsive SPA to explore news items, vote fake/non‑fake, and discuss with optional comments and image URLs. Built with Vue 3, Vite, Tailwind, Pinia, and Vue Router.',
   repoUrl: 'https://github.com/chartchai-class/project-01-the-anti-fake-news-system-beastduo', // Add GitHub repository URL if available
-  demoUrl: '', // Add demo video URL (2–3 minutes) if available
+  demoUrl: 'https://youtu.be/a5hyexIkq0w?si=NjNLFhN8_4XFB6sA', // Add demo video URL (2–3 minutes) if available
   contactEmail: '',
   team: [
     { id: '662115012', name: 'Chindanai Jaiman', section: '701' },
